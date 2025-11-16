@@ -1,0 +1,63 @@
+Objectives:
+       Contains all the necessary Commnads that help to Controal files.
+
+  ⌯⌲ File System Navigation:
+        +----------------------------------------------------------------------- +
+        |  Command:                  |            Explanation                    |
+        + -------------------------- + ----------------------------------------- +
+        |    pwd                     |      Shows Current Directory.             |
+        |    ls                      |      List Files.                          |
+        |    cd <dir>                |      Change directory.                    |
+        |    cd ..                   |      Move up one directory.               |
+        |    cd ~                    |      Go to home directory.                |
+        |    tree                    |      Show directory tree.                 |
+        |    touch <file>            |      Create empty file                    |
+        |    cat <file>              |      Show file contents                   |
+        |    nano <file>             |      Edit file                            |
+        |    less <file>             |      Scroll through file                  |
+        |   find <path> -name <file> |     Search for a file                     |
+        + -------------------------- + ----------------------------------------- +
+
+
+  ⌯⌲ File & Directory Permissions:
+        + -------------------------- + --------------------------------------------------------------- +
+        |  Command:                  |            Explanation                                          |
+        + -------------------------- + --------------------------------------------------------------- +
+        |    mkdir                   |       Create folder                                             |
+        |    rmdir <dir>             |       Remove empty folder                                       |
+        |    rm <file>               |       Remove file                                               |
+        |   rm -r <dir>              |       Delete folder + contents                                  |
+        |   cp <src> <dst>           |       Copy file                                                 |
+        |  cp -r <src> <dst>         |       Copy directory                                            |
+        |  mv <src> <dst>            |       Move/rename                                               |
+        |  chmod 755 <file>          |       Owner rwx, Group r-x, Others r-x                          |
+        |  chmod u+x <file>          |       Add execute to user                                       |
+        |  chmod g-w <file>          |       Remove write from group                                   |
+        | chmod o+r <file>           |       Add read for others                                       |
+        | chown user <file>          |       Change file owner                                         |
+        | chown user:group <file>    |       Change owner + group                                      |
+        | chown -R user:group <dir>  |       Recursive change                                          |
+        + -------------------------- + --------------------------------------------------------------- +
+
+Note:  Symbol Basics: 
+r = read
+w = write
+x = execute
+User / Group / Others → u / g / o
+
+⌯⌲ Package Management:
+        + -------------------------- + --------------------------------------------------------------- +
+        |  Command:                  |            Explanation                                          |
+        + -------------------------- + --------------------------------------------------------------- +
+        |     sudo apt update        |       Update package lists                                      |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
