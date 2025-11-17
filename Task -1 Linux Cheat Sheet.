@@ -46,10 +46,29 @@ x = execute
 User / Group / Others → u / g / o
 
 ⌯⌲ Package Management:
+        + -------------------------- + ------------------------------------------- +
+        |  Command:                  |            Explanation                      |
+        + -------------------------- + ------------------------------------------- +
+        |   sudo apt update          |       Update package lists                  |
+        |   sudo apt upgrade         |       Upgrade all Packages                  |
+        |   sudo apt install <pkg>   |       Install a package                     |
+        |   sudo apt remove <pkg>    |       Remove a package                      |
+        |   sudo apt purge <pkg>     |       Remove + config files                 |
+        |   apt search <keyword>     |       Search for a package                  |
+        |   apt show <pkg>           |       Package info                          |
+        |   sudo apt autoremove      |       Clean unused deps                     |
+        |   sudo dpkg -i <file.deb>  |       Install .deb                          |
+        |   dpkg -l                  |       List installed packages               |
+        |   dpkg -r <pkg>            |       Remove package                        |
+        |   dpkg -S <file>           |       Find which package owns file          |
+        + -------------------------- + ------------------------------------------- +
+
+
+       
+⌯⌲ Networking Commands:
+        + -------------------------- + --------------------------------------------------------------- +    
+        |                            |                                                                 |
         + -------------------------- + --------------------------------------------------------------- +
-        |  Command:                  |            Explanation                                          |
-        + -------------------------- + --------------------------------------------------------------- +
-        |     sudo apt update        |       Update package lists                                      |
         |                            |                                                                 |
         |                            |                                                                 |
         |                            |                                                                 |
@@ -61,3 +80,20 @@ User / Group / Others → u / g / o
         |                            |                                                                 |
         |                            |                                                                 |
         |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+        |                            |                                                                 |
+
+
+
+
+
