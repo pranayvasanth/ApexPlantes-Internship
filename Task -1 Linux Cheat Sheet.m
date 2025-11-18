@@ -1,5 +1,5 @@
 Objectives:
-       Contains all the necessary Commnads that help to Controal files.
+       Contains all the necessary commands that help to Control files.
 
   ⌯⌲ File System Navigation:
         +----------------------------------------------------------------------- +
@@ -66,7 +66,7 @@ User / Group / Others → u / g / o
 
        
 ⌯⌲ Networking Commands:
-       Note: contains only Basic Network info , Connectivity & Testing , Port & Service Checking,Misc Networking.
+       Note: contains only Basic Network info, Connectivity & Testing, Port & Service Checking, Misc Networking.
         + -------------------------- + --------------------------------------------------------------- +    
         |       Commands:            |                Explanation                                      |
         + -------------------------- + --------------------------------------------------------------- +
