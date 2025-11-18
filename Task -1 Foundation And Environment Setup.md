@@ -168,8 +168,8 @@ Threats originating from individuals with internal access.
 **Note**: Sub-task 3 (Linux Fundamentals) is maintained in a separate file to ensure modular access and streamlined reading.
 
 ---
-### **4.Networking Basic Behaviour** 
-
+# **4. Networking Basic Behaviour** 
+---
  **OSI Model Layers And Functions**: 
 
 The OSI (Open Systems Interconnection) Model is a set of rules that explains how different computer systems communicate over a network. The OSI Model was developed by the International Organisation for Standardisation (ISO). The OSI Model comprises seven layers, each with specific functions and responsibilities. This layered approach makes it easier for different devices and technologies to work together.   
