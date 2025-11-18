@@ -1,20 +1,20 @@
 Objectives:
 
-The primary objectives of this module are to build strong fundamentals in:
+* The primary objectives of this module are to build strong fundamentals in:
 
 * Cybersecurity
 * Networking
 * Cryptography
 * Professional lab setup
 
-Sub-Tasks
+Sub-Tasks : 
 
-1. Cybersecurity Basics
-2. Lab Environment Setup
-3. Linux Fundamentals
-4. Networking Fundamentals
-5. Cryptography Basics
-6. Tool Familiarization
+1. Cybersecurity Basics.
+2. Lab Environment Setup.
+3. Linux Fundamentals.
+4. Networking Fundamentals.
+5. Cryptography Basics.
+6. Tool Familiarisation.
 
 ---
 
@@ -31,7 +31,7 @@ They form the baseline framework followed globally across organizations.
 
 ### **1.1.1 Confidentiality**
 
-Confidentiality ensures that information is accessible only to authorized individuals.
+Confidentiality ensures that information is accessible only to authorised individuals.
 
 **Implementation Methods**
 
@@ -43,7 +43,7 @@ Confidentiality ensures that information is accessible only to authorized indivi
 
 **Common Attacks**
 
-* Unauthorized access
+* Unauthorised access
 * Identity theft
 * Credential harvesting
 * Phishing-based breaches
@@ -65,7 +65,7 @@ Integrity ensures information remains accurate, consistent, and unaltered.
 **Common Attacks**
 
 * Man-in-the-Middle
-* Unauthorized data modification
+* Unauthorised data modification
 * SQL injection
 * Packet tampering
 
@@ -73,7 +73,7 @@ Integrity ensures information remains accurate, consistent, and unaltered.
 
 ### **1.1.3 Availability**
 
-Availability ensures information and services are accessible to authorized users at all times.
+Availability ensures information and services are accessible to authorised users at all times.
 
 **Implementation Methods**
 
@@ -106,7 +106,7 @@ Threats may be:
 
 * Phishing : Deceptive communication designed to steal credentials, financial data, or personal information.
 
-* Malware : Software created to infiltrate, damage, or gain unauthorized access.
+* Malware : Software created to infiltrate, damage, or gain unauthorised access.
 
       Malware Types Include
   
@@ -128,7 +128,7 @@ Threats may be:
 
 ## **1.3 Attack Vectors**
 
-An attack vector is the route or method through which an attacker gains unauthorized access or delivers malicious content.
+An attack vector is the route or method through which an attacker gains unauthorised access or delivers malicious content.
 
 ---
 
@@ -171,6 +171,16 @@ Threats originating from individuals with internal access.
 ---
 ### **4.Networing Basics**:
 ---
-  ![OSI Model](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/OSI_Model.jpg?raw=1)
+ *OSI Model Layers And Functions:
 
-    
+ The OSI (Open Systems Interconnection) Model is a set of rules that explains how different computer systems communicate over a network. The OSI Model was developed by the International Organisation for Standardisation (ISO). The OSI Model consists of 7 layers, and each layer has specific functions and responsibilities. This layered approach makes it easier for different devices and technologies to work together.   
+
+ ![OSI Model](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/OSI_Model.jpg?raw=1)
+
+## **Layer 1: Physical Layer** : 
+--
+
+The lowest layer of the OSI reference model is the Physical Layer. It is responsible for the actual physical connection between the devices. The physical layer contains information in the form of bits.
+
+ * The Physical Layer is responsible for transmitting individual bits from one node to the next.
+ * When receiving data, this layer will get the signal received and convert it into 0s and 1s and send them to the Data Link layer, which will put the frame back together.      
