@@ -176,7 +176,7 @@ Threats originating from individuals with internal access.
 The OSI (Open Systems Interconnection) Model is a set of rules that explains how different computer systems communicate over a network. The OSI Model was developed by the International Organisation for Standardisation (ISO). The OSI Model comprises seven layers, each with specific functions and responsibilities. This layered approach makes it easier for different devices and technologies to work together.   
  
 
- ![OSI Model](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/OSI_Model.jpg?raw=1)
+   ![OSI Model](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/OSI_Model.jpg?raw=1)
 
 ## **Layer 1: Physical Layer** : 
 
@@ -205,5 +205,16 @@ The data link layer is responsible for the node-to-node delivery of the message.
 The network layer works for the transmission of data from one host to the other located in different networks. It also takes care of packet routing i.e. selection of the shortest path to transmit the packet, from the number of routes available.
 
 * The sender and receiver's IP address are placed in the header by the network layer.
-* Segment in the Network layer is referred to as Packet.
-* Network layer is implemented by networking devices such as routers and switches.
+* Segment in the Network layer is referred to as a Packet.
+* The network layer is implemented by networking devices such as routers and switches.
+
+## **Layer 4: Transport Layer** :
+The transport layer provides services to the application layer and takes services from the network layer. The data in the transport layer is referred to as Segments. It is responsible for the end-to-end delivery of the complete message.
+
+* The transport layer also provides the acknowledgment of the successful data transmission and re-transmits the data if an error is found.
+* Protocols used in Transport Layer are TCP, UDP NetBIOS, PPTP.
+* At the sender's side, the transport layer receives the formatted data from the upper layers, performs Segmentation, and also implements Flow and error control to ensure proper data transmission.
+* It also adds Source and Destination port number in its header and forwards the segmented data to the Network Layer.
+* Generally, this destination port number is configured, either by default or manually.
+* Example: when a web application requests a web server, it typically uses port number 80, because this is the default port assigned to web applications. Many applications have default ports assigned.
+* At the Receiver’s side, Transport Layer reads the port number from its header and forwards the Data which it has received to the respective application. It also performs sequencing and reassembling of the segmented data.
