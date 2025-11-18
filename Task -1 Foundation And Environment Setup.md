@@ -1,12 +1,19 @@
 Objectives:
-    . Building a Strong Fundamentals in Cybersecurity, Networking, Cryptography, And Setting Up a profissonal Lab.
+
+Building a Strong Fundamentals in Cybersecurity, Networking, Cryptography, And Setting Up a profissonal Lab.
+    
 Sub-Tasks:
-    1.Cybersecurity Bascis.
-    2.Lab Environment Setup.
-    3.Linux Fundamentals.
-    4.Networking Bascis.
-    5.Cryptography Bascis.
-    6.Toll Familiarization.
+ 1.Cybersecurity Bascis.
+    
+ 2.Lab Environment Setup.
+    
+3.Linux Fundamentals.
+
+4.Networking Bascis.
+
+5.Cryptography Bascis.
+
+6.Toll Familiarization.
 
 1. Cybersecurity Bascis:
 
@@ -44,10 +51,10 @@ Key Implementation Methods:
 
 Common Attacks:
 
-. Man-in-the-Middle (MITM) attacks
-. Packet interception and modification
-. Data tampering and unauthorized modifications
-. Database injection attacks
+\ Man-in-the-Middle (MITM) attacks
+\ Packet interception and modification
+\ Data tampering and unauthorized modifications
+\ Database injection attacks
 
 ⚡ Availability
     Ensures that information and systems are accessible to authorized users when needed, maintaining business continuity.
