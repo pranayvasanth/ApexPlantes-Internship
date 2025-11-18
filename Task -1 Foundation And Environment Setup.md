@@ -7,7 +7,7 @@ The primary objectives of this module are to build strong fundamentals in:
 * Cryptography
 * Professional lab setup
 
- **3. Sub-Tasks**
+Sub-Tasks**
 
 1. Cybersecurity Basics
 2. Lab Environment Setup
@@ -18,18 +18,18 @@ The primary objectives of this module are to build strong fundamentals in:
 
 ---
 
-# **4. Cybersecurity Basics**
+# **1. Cybersecurity Basics**
 
 ---
 
-## **4.1 CIA Triad**
+## **1.1 CIA Triad**
 
 The CIA Triad represents the three essential pillars of information security.
 They form the baseline framework followed globally across organizations.
 
 ---
 
-### **4.1.1 Confidentiality**
+### **1.1.1 Confidentiality**
 
 Confidentiality ensures that information is accessible only to authorized individuals.
 
@@ -50,7 +50,7 @@ Confidentiality ensures that information is accessible only to authorized indivi
 
 ---
 
-### **4.1.2 Integrity**
+### **1.1.2 Integrity**
 
 Integrity ensures information remains accurate, consistent, and unaltered.
 
@@ -71,7 +71,7 @@ Integrity ensures information remains accurate, consistent, and unaltered.
 
 ---
 
-### **4.1.3 Availability**
+### **1.1.3 Availability**
 
 Availability ensures information and services are accessible to authorized users at all times.
 
@@ -91,7 +91,7 @@ Availability ensures information and services are accessible to authorized users
 
 ---
 
-## **4.2 Threats**
+## **1.2 Threats**
 
 A threat refers to any event or action with the potential to harm systems, networks, or data by impacting confidentiality, integrity, or availability.
 
@@ -138,13 +138,13 @@ Encrypts files and demands payment for decryption.
 
 ---
 
-## **4.3 Attack Vectors**
+## **1.3 Attack Vectors**
 
 An attack vector is the route or method through which an attacker gains unauthorized access or delivers malicious content.
 
 ---
 
-### **4.3.1 Social Engineering**
+### **1.3.1 Social Engineering**
 
 Exploits human behavior rather than technical vulnerabilities.
 
@@ -157,7 +157,7 @@ Exploits human behavior rather than technical vulnerabilities.
 
 ---
 
-### **4.3.2 Wireless Attacks**
+### **1.3.2 Wireless Attacks**
 
 Targets weaknesses in Wi-Fi networks and wireless devices.
 
@@ -169,7 +169,7 @@ Targets weaknesses in Wi-Fi networks and wireless devices.
 
 ---
 
-### **4.3.3 Insider Threats**
+### **1.3.3 Insider Threats**
 
 Threats originating from individuals with internal access.
 
@@ -177,14 +177,15 @@ Threats originating from individuals with internal access.
 
 * Malicious insiders
 * Accidental insiders
+---
 
+Note: Sub-task 3 (Linux Fundamentals) is maintained in a separate file to ensure modular access and streamlined reading.
 
-5. Note
+---
 
-Sub-task 3 (Linux Fundamentals) is maintained in a separate file to ensure modular access and streamlined reading.
+4. Networing Basics:
 
-
-4. Networing Basics:    
-        ![OSI Model](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/OSI_Model.jpg?raw=1)
+---
+  ![OSI Model](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/OSI_Model.jpg?raw=1)
 
     
