@@ -66,33 +66,27 @@ User / Group / Others → u / g / o
 
        
 ⌯⌲ Networking Commands:
+       Note: contains only Basic Network info , Connectivity & Testing , Port & Service Checking,Misc Networking.
         + -------------------------- + --------------------------------------------------------------- +    
-        |                            |                                                                 |
+        |       Commands:            |                Explanation                                      |
         + -------------------------- + --------------------------------------------------------------- +
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-        |                            |                                                                 |
-
+        |     ifconfig               |           Show Network interfaces                               |
+        |     ip a                   |           Modern  Replacement for ifconfig                      |
+        |     ip r                   |           Show routing table                                    |
+        |     hostname -I            |           Shows IP address                                      |
+        |     ping <host>            |           Test Connectivity                                     |
+        |     traceroute <host>      |           Trace network path                                    |
+        |     curl <url>             |           Fetch web content                                     |
+        |     wget <url>             |           Download file                                         |
+        |     nslookup  <domain>     |           DNS lookup                                            |
+        |     dig <domain>           |           Detailed DNS lookup                                   |
+        |     netstart -tulnp        |           Shows active ports (legacy)                           |
+        |     ss -tulnp              |           Modern netstart alternative                           |
+        |     lsof -i :<port>        |           See process using a port                              |
+        |     systemctl restart      |           Restart network service                               |
+        |                -networking |                                                                 |
+        |     nmcli                  |           NetworkManager CLI tool                               |
+        + -------------------------- + --------------------------------------------------------------- +
 
 
 
