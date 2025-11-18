@@ -11,8 +11,8 @@ Sub-Tasks:
 1. Cybersecurity Bascis:
 
 👉 The CIA Triad :
-
-        The CIA Triad forms the foundation of information security, representing three core principles that must be maintained to ensure data security.
+                The CIA Triad forms the foundation of information security, 
+                representing three core principles that must be maintained to ensure data security.
 
 🔒 Confidentiality
     Ensures that information is accessible only to authorized individuals and remains protected from unauthorized access.
@@ -73,11 +73,10 @@ Common Attacks:
 
 ⚠️ Threat Types:
      Here are explanations of various common cyber threat types:
-
-    1. Phishing: This is a social engineering attack where attackers attempt to deceive individuals into revealing sensitive information (like usernames, passwords, or financial details) by impersonating a trustworthy entity in electronic communications.
+        1. Phishing: This is a social engineering attack where attackers attempt to deceive individuals into revealing sensitive information (like usernames, passwords, or financial details) by impersonating a trustworthy entity in electronic communications.
                 This can occur through emails, messages, or websites designed to look legitimate.
-
-    2. Malware: This is an umbrella term for "malicious software" designed to damage, disrupt, or gain unauthorized access to a computer system. 
+    
+2. Malware: This is an umbrella term for "malicious software" designed to damage, disrupt, or gain unauthorized access to a computer system. 
             Common types of malware include:
                     . Viruses: Self-replicating programs that attach to legitimate programs and spread when those programs are executed.
                     . Worms: Self-replicating malware that spreads independently across networks.
@@ -102,23 +101,23 @@ Common Attacks:
                 Hackers use numerous attack vectors to launch attacks that take advantage of system weaknesses, cause a data breach, or steal login credentials. 
                 Such methods include sharing malware and viruses, malicious email attachments and web links, pop-up windows, and instant messages that involve the attacker duping an employee or individual user.
 
-    🏹 Types of Vector Attacks:
+ 🏹 Types of Vector Attacks:
          . Social engineering.
          .  wireless attacks. 
          . insider threats.
             These all common attack vectors, which are pathways attackers use to gain access to systems and data.
 
-    1.  Social engineering: Attacks that rely on human psychology to manipulate individuals into making security mistakes or giving away sensitive information.
+1.  Social engineering: Attacks that rely on human psychology to manipulate individuals into making security mistakes or giving away sensitive information.
 
-        Examples:
+   Examples:
             . Phishing: Sending fraudulent emails to trick people into revealing information.
             . Vishing: Voice phishing, or phone-based phishing.
             . Smishing: SMS phishing, or text message-based phishing.
             . Pretexting: Creating a fabricated scenario to get information. 
 
-    2. Wireless attacks : Attacks that target wireless networks and devices, such as Wi-Fi networks.
+2. Wireless attacks : Attacks that target wireless networks and devices, such as Wi-Fi networks.
 
-        Examples:
+    Examples:
             . Rogue access points: Setting up a malicious Wi-Fi hotspot that looks legitimate to intercept data.
             . Packet sniffing: Intercepting and analyzing data packets sent over a wireless network.
             . Denial-of-service (DoS) attacks: Overloading a wireless network with traffic to make it unusable. 
