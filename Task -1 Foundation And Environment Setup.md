@@ -104,37 +104,24 @@ Threats may be:
 
 ### **👉 Common Threat Types**
 
-####* Phishing
+* Phishing : Deceptive communication designed to steal credentials, financial data, or personal information.
 
-Deceptive communication designed to steal credentials, financial data, or personal information.
-
-####* Malware
-
-Software created to infiltrate, damage, or gain unauthorized access.
-
+* Malware : Software created to infiltrate, damage, or gain unauthorized access.
 **Types Include**
-
+  
 * Virus
 * Worm
 * Trojan
 * Spyware
 * Adware
 
-* DDoS
+* DDoS : Overwhelms a target network/service with excessive traffic, causing downtime.
 
-Overwhelms a target network/service with excessive traffic, causing downtime.
+* SQL Injection : Injects malicious SQL commands to manipulate or extract database information.
 
-* SQL Injection
+* Brute Force : Systematically attempting every possible credential combination.
 
-Injects malicious SQL commands to manipulate or extract database information.
-
-* Brute Force
-
-Systematically attempting every possible credential combination.
-
-* Ransomware
-
-Encrypts files and demands payment for decryption.
+* Ransomware : Encrypts files and demands payment for decryption.
 
 ---
 
@@ -152,7 +139,7 @@ Exploits human behavior rather than technical vulnerabilities.
 
 * Phishing
 * Vishing (voice phishing)
-*  Smishing (SMS phishing)
+* Smishing (SMS phishing)
 * Pretexting
 
 ---
