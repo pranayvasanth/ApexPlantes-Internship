@@ -1,199 +1,188 @@
-Objectives
+Objectives:
 
-Building strong fundamentals in Cybersecurity, Networking, Cryptography, and setting up a professional lab.
+The primary objectives of this module are to build strong fundamentals in:
 
-Sub-Tasks
+* Cybersecurity
+* Networking
+* Cryptography
+* Professional lab setup
 
-Cybersecurity Basics
-
-Lab Environment Setup
-
-Linux Fundamentals
-
-Networking Basics
-
-Cryptography Basics
-
-Tool Familiarization
+ **3. Sub-Tasks**
 
 1. Cybersecurity Basics
-👉 CIA Triad
+2. Lab Environment Setup
+3. Linux Fundamentals
+4. Networking Fundamentals
+5. Cryptography Basics
+6. Tool Familiarization
 
-The CIA Triad forms the foundation of information security. It represents the three core principles required to protect systems and data.
+---
 
-🔒 Confidentiality
+# **4. Cybersecurity Basics**
 
-Ensures that information is accessible only to authorized individuals.
+---
 
-Key Implementation Methods
+## **4.1 CIA Triad**
 
-Authentication (username/password, MFA)
+The CIA Triad represents the three essential pillars of information security.
+They form the baseline framework followed globally across organizations.
 
-Access controls (RBAC, least privilege)
+---
 
-Encryption (data at rest & in transit)
+### **4.1.1 Confidentiality**
 
-Physical security (locked workstations, secure rooms)
+Confidentiality ensures that information is accessible only to authorized individuals.
 
-Common Attacks
+**Implementation Methods**
 
-Data breaches
+* Authentication (passwords, MFA)
+* Role-based Access Control (RBAC)
+* Least privilege enforcement
+* Encryption (AES, TLS)
+* Physical security controls
 
-Identity theft
+**Common Attacks**
 
-Keylogging
+* Unauthorized access
+* Identity theft
+* Credential harvesting
+* Phishing-based breaches
 
-Phishing
+---
 
-Dumpster diving
+### **4.1.2 Integrity**
 
-🛡️ Integrity
+Integrity ensures information remains accurate, consistent, and unaltered.
 
-Ensures information remains accurate, consistent, and unaltered.
+**Implementation Methods**
 
-Key Implementation Methods
+* Cryptographic hashing (SHA-256)
+* Checksums and data verification
+* Digital signatures
+* Message Authentication Codes (MAC)
+* Version control
 
-Cryptographic hashing (SHA-256, checksums)
+**Common Attacks**
 
-Digital signatures
+* Man-in-the-Middle
+* Unauthorized data modification
+* SQL injection
+* Packet tampering
 
-Message Authentication Codes (MAC)
+---
 
-Version control
+### **4.1.3 Availability**
 
-Common Attacks
+Availability ensures information and services are accessible to authorized users at all times.
 
-MITM attacks
+**Implementation Methods**
 
-Packet modification
+* Redundancy and failover systems
+* Backups and disaster recovery planning
+* Load balancing
+* Patch and maintenance cycles
 
-Data tampering
+**Common Attacks**
 
-SQL/Database injection
+* DoS and DDoS
+* Resource exhaustion
+* System failures
+* Network outages
 
-⚡ Availability
+---
 
-Ensures systems and data are accessible when needed.
+## **4.2 Threats**
 
-Key Implementation Methods
+A threat refers to any event or action with the potential to harm systems, networks, or data by impacting confidentiality, integrity, or availability.
 
-Redundancy & backups
+Threats may be:
 
-Load balancing
+* **Intentional:** malware, hacking, targeted attacks
+* **Unintentional:** human error, misconfiguration, natural incidents
 
-Disaster recovery & BCP
+---
 
-Regular patching and maintenance
+### **Common Threat Types**
 
-Common Attacks
+#### **Phishing**
 
-DoS
+Deceptive communication designed to steal credentials, financial data, or personal information.
 
-DDoS
+#### **Malware**
 
-Resource exhaustion
+Software created to infiltrate, damage, or gain unauthorized access.
 
-System failures
+**Types Include**
 
-👉 Threat
+* Virus
+* Worm
+* Trojan
+* Spyware
+* Adware
 
-A threat is any event/action that could harm systems or data by affecting confidentiality, integrity, or availability.
+#### **DDoS**
 
-Threats can be intentional (malware, hacking) or accidental (human error, natural disasters).
+Overwhelms a target network/service with excessive traffic, causing downtime.
 
-⚠️ Threat Types
-1️⃣ Phishing
+#### **SQL Injection**
 
-Tricking users into revealing sensitive data through fake emails, websites, or messages.
+Injects malicious SQL commands to manipulate or extract database information.
 
-2️⃣ Malware
+#### **Brute Force**
 
-Malicious software designed to harm or infiltrate systems.
+Systematically attempting every possible credential combination.
 
-Common Malware Types
+#### **Ransomware**
 
-Virus – attaches to programs and spreads
+Encrypts files and demands payment for decryption.
 
-Worms – self-replicating across networks
+---
 
-Trojans – disguised as legitimate software
+## **4.3 Attack Vectors**
 
-Spyware – secretly monitors user activity
+An attack vector is the route or method through which an attacker gains unauthorized access or delivers malicious content.
 
-Adware – displays unwanted ads
+---
 
-3️⃣ DDoS (Distributed Denial of Service)
+### **4.3.1 Social Engineering**
 
-Overwhelming a server with traffic to make it unavailable.
+Exploits human behavior rather than technical vulnerabilities.
 
-4️⃣ SQL Injection
+**Examples**
 
-Injecting malicious SQL commands into input fields to manipulate a database.
+* Phishing
+* Vishing (voice phishing)
+* Smishing (SMS phishing)
+* Pretexting
 
-5️⃣ Brute Force
+---
 
-Trying every possible password combination using automated tools.
+### **4.3.2 Wireless Attacks**
 
-6️⃣ Ransomware
+Targets weaknesses in Wi-Fi networks and wireless devices.
 
-Encrypts the victim’s system/files and demands payment for decryption.
+**Examples**
 
-👉 Attack Vector
+* Rogue access points
+* Packet sniffing
+* Wireless DoS
 
-An attack vector is the route or method used by attackers to gain unauthorized access to a system.
+---
 
-Examples include:
+### **4.3.3 Insider Threats**
 
-Malware
+Threats originating from individuals with internal access.
 
-Malicious links
+**Types**
 
-Email attachments
+* Malicious insiders
+* Accidental insiders
 
-Fake websites
 
-Pop-ups
+5. Note
 
-🏹 Types of Attack Vectors
-1️⃣ Social Engineering
+Sub-task 3 (Linux Fundamentals) is maintained in a separate file to ensure modular access and streamlined reading.
 
-Manipulating human psychology to extract information.
-
-Examples:
-
-Phishing – fraudulent emails
-
-Vishing – voice phishing
-
-Smishing – SMS phishing
-
-Pretexting – fake scenarios to gain trust
-
-2️⃣ Wireless Attacks
-
-Targeting Wi-Fi networks and wireless devices.
-
-Examples:
-
-Rogue access points
-
-Packet sniffing
-
-Wireless DoS attacks
-
-3️⃣ Insider Threats
-
-Threats coming from within the organization.
-
-Examples:
-
-Malicious insiders – intentionally leaking/stealing data
-
-Accidental insiders – misconfigurations, clicking phishing links
-
-Note
-
-Sub-task 3 is in a different file for easier access. It is not theory-heavy.
 
 4. Networing Basics:    
         ![OSI Model](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/OSI_Model.jpg?raw=1)
