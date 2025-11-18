@@ -44,34 +44,46 @@ Common Attacks:
 
 Key Implementation Methods:
 
-. Cryptographic hashing: SHA-256, MD5 checksums for data verification
-. Digital signatures: Non-repudiation and authenticity verification
-. Message Authentication Codes (MAC): Ensuring message integrity
-. Version control: Tracking changes and maintaining data consistency
+ -> Cryptographic hashing: SHA-256, MD5 checksums for data verification
+ 
+ -> Digital signatures: Non-repudiation and authenticity verification
+
+ -> Message Authentication Codes (MAC): Ensuring message integrity
+
+ -> Version control: Tracking changes and maintaining data consistency
 
 Common Attacks:
 
-\ Man-in-the-Middle (MITM) attacks
-\ Packet interception and modification
-\ Data tampering and unauthorized modifications
-\ Database injection attacks
+ -> Man-in-the-Middle (MITM) attacks.
+
+ -> Packet interception and modification
+
+ -> Data tampering and unauthorized modifications
+
+ -> Database injection attacks
 
 ⚡ Availability
     Ensures that information and systems are accessible to authorized users when needed, maintaining business continuity.
 
 Key Implementation Methods:
 
-. Redundancy: Backup systems and failover mechanisms
-. Load balancing: Distributing traffic across multiple servers
-. Disaster recovery: Business continuity planning
-. Regular maintenance: System updates and performance monitoring
+-> Redundancy: Backup systems and failover mechanisms
+
+-> Load balancing: Distributing traffic across multiple servers
+
+-> Disaster recovery: Business continuity planning
+
+-> Regular maintenance: System updates and performance monitoring
 
 Common Attacks:
 
-. Denial of Service (DoS) attacks
-. Distributed Denial of Service (DDoS) attacks
-. System outages and infrastructure failures
-. Resource exhaustion attacks.
+-> Denial of Service (DoS) attacks
+
+-> Distributed Denial of Service (DDoS) attacks
+
+-> System outages and infrastructure failures
+
+-> Resource exhaustion attacks.
 
 
 👉 Threat: 
@@ -80,19 +92,25 @@ Common Attacks:
 
 ⚠️ Threat Types:
      Here are explanations of various common cyber threat types:
-        1. Phishing: This is a social engineering attack where attackers attempt to deceive individuals into revealing sensitive information (like usernames, passwords, or financial details) by impersonating a trustworthy entity in electronic communications.
+     
+1. Phishing: This is a social engineering attack where attackers attempt to deceive individuals into revealing sensitive information (like usernames, passwords, or financial details) by impersonating a trustworthy entity in electronic communications.
                 This can occur through emails, messages, or websites designed to look legitimate.
+
     
 2. Malware: This is an umbrella term for "malicious software" designed to damage, disrupt, or gain unauthorized access to a computer system. 
-            Common types of malware include:
-                    . Viruses: Self-replicating programs that attach to legitimate programs and spread when those programs are executed.
-                    . Worms: Self-replicating malware that spreads independently across networks.
-                    . Trojans: Malicious programs disguised as legitimate software to trick users into installing them.
+
+  Common types of malware include:
+
+   -> Viruses: Self-replicating programs that attach to legitimate programs and spread when those programs are executed.
+                    
+   -> Worms: Self-replicating malware that spreads independently across networks.
+                    - Trojans: Malicious programs disguised as legitimate software to trick users into installing them.
                     . Spyware: Software that secretly monitors and collects information about user activity.
                     . Adware: Software that displays unwanted advertisements.
 
-    3. DDoS (Distributed Denial of Service): In a DDoS attack, multiple compromised computer systems (a botnet) are used to flood a target server, website, or network resource with an overwhelming amount of traffic.
-                                             This overload prevents legitimate users from accessing the service, effectively denying them service.
+3. DDoS (Distributed Denial of Service): In a DDoS attack, multiple compromised computer systems (a botnet) are used to flood a target server, website, or network                                resource with an overwhelming amount of traffic.
+
+4. This overload prevents legitimate users from accessing the service, effectively denying them service.
 
     4. SQL Injection: This attack exploits vulnerabilities in web applications that use SQL databases. Attackers insert malicious SQL code into input fields (like login forms) to manipulate the database, 
                         potentially gaining unauthorized access to data, modifying data, or executing administrative commands.
