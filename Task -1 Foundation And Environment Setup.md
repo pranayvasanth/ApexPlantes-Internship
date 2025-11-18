@@ -169,8 +169,9 @@ Threats originating from individuals with internal access.
 
 ---
 # **4. Networking Basic Behaviour** 
----
- **OSI Model Layers And Functions**: 
+
+
+ ## **OSI Model Layers And Functions**: 
 
 The OSI (Open Systems Interconnection) Model is a set of rules that explains how different computer systems communicate over a network. The OSI Model was developed by the International Organisation for Standardisation (ISO). The OSI Model comprises seven layers, each with specific functions and responsibilities. This layered approach makes it easier for different devices and technologies to work together.   
  
@@ -198,3 +199,11 @@ The data link layer is responsible for the node-to-node delivery of the message.
 * Logical Link Control (LLC)
 
 * Media Access Control (MAC)
+
+## **Layer 3: Network Layer** :
+
+The network layer works for the transmission of data from one host to the other located in different networks. It also takes care of packet routing i.e. selection of the shortest path to transmit the packet, from the number of routes available.
+
+* The sender and receiver's IP address are placed in the header by the network layer.
+* Segment in the Network layer is referred to as Packet.
+* Network layer is implemented by networking devices such as routers and switches.
