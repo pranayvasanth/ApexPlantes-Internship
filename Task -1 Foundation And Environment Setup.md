@@ -102,13 +102,13 @@ Threats may be:
 
 ---
 
-### ** 👉 Common Threat Types**
+### **👉 Common Threat Types**
 
-#### ** * Phishing**
+####* Phishing
 
 Deceptive communication designed to steal credentials, financial data, or personal information.
 
-#### ** * Malware**
+####* Malware
 
 Software created to infiltrate, damage, or gain unauthorized access.
 
@@ -120,19 +120,19 @@ Software created to infiltrate, damage, or gain unauthorized access.
 * Spyware
 * Adware
 
-#### ** * DDoS**
+* DDoS
 
 Overwhelms a target network/service with excessive traffic, causing downtime.
 
-#### ** * SQL Injection**
+* SQL Injection
 
 Injects malicious SQL commands to manipulate or extract database information.
 
-#### ** * Brute Force**
+* Brute Force
 
 Systematically attempting every possible credential combination.
 
-#### ** * Ransomware**
+* Ransomware
 
 Encrypts files and demands payment for decryption.
 
