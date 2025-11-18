@@ -37,10 +37,10 @@ Key Implementation Methods:
 Common Attacks:
 
 -> Data breaches and unauthorized access
-
+  
 -> Card skimming and identity theft
 
--> Keylogging and credential harvesting
+-> Keylogging and credential harv esting
 
 -> Phishing and social engineering
 
@@ -136,8 +136,7 @@ Such methods include sharing malware and viruses, malicious email attachments an
          1 Social engineering.
          2 wireless attacks. 
          3 insider threats.
-            
-These all common attack vectors, which are pathways attackers use to gain access to systems and data.
+             thways attackers use to gain access to systems and data.
 
 1.  Social engineering: Attacks that rely on human psychology to manipulate individuals into making security mistakes or giving away sensitive information.
 
@@ -160,7 +159,7 @@ These all common attack vectors, which are pathways attackers use to gain access
             1 Malicious insiders: Employees, former employees, or contractors who intentionally cause harm, such as stealing data.
             2 Accidental insiders: Employees who, through negligence, cause a data breach, such as accidentally clicking a phishing link or misconfiguring a system. 
 
-Note: Sub-task 3 is in different file , because its easy to acees , and sub- task is not a theoritical task.
+Note: Sub-task 3 is in different file , becau  e its easy to acees , and sub- task is not a theoritical task.
 
 4. Networing Basics:    
         ![OSI Model](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/OSI_Model.jpg?raw=1)
