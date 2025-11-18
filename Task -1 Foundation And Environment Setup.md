@@ -124,7 +124,7 @@ Software created to infiltrate, damage, or gain unauthorized access.
 
 Overwhelms a target network/service with excessive traffic, causing downtime.
 
-#### **SQL Injection**
+#### **👉 SQL Injection**
 
 Injects malicious SQL commands to manipulate or extract database information.
 
@@ -150,10 +150,10 @@ Exploits human behavior rather than technical vulnerabilities.
 
 **Examples**
 
-* Phishing
-* Vishing (voice phishing)
-* Smishing (SMS phishing)
-* Pretexting
+* 👉 Phishing
+* 👉 Vishing (voice phishing)
+* 👉 Smishing (SMS phishing)
+* 👉 Pretexting
 
 ---
 
@@ -181,7 +181,7 @@ Threats originating from individuals with internal access.
 **Note**: Sub-task 3 (Linux Fundamentals) is maintained in a separate file to ensure modular access and streamlined reading.
 
 ---
-###4.**Networing Basics**:
+### **4.Networing Basics**:
 ---
   ![OSI Model](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/OSI_Model.jpg?raw=1)
 
