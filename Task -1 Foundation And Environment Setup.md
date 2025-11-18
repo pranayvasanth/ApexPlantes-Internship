@@ -106,13 +106,15 @@ Threats may be:
 
 * Phishing : Deceptive communication designed to steal credentials, financial data, or personal information.
 
-* ## Malware : Software created to infiltrate, damage, or gain unauthorized access.
-   **Types Include**
-            * Virus
-            * Worm
-            * Trojan
-            * Spyware
-            * Adware
+* Malware : Software created to infiltrate, damage, or gain unauthorized access.
+
+      Malware Types Include
+  
+                  * Virus
+                  * Worm
+                  * Trojan
+                  * Spyware
+                  * Adware
   
 * DDoS : Overwhelms a target network/service with excessive traffic, causing downtime.
 
