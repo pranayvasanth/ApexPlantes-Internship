@@ -1,8 +1,8 @@
 Objectives:
-
-Building a Strong Fundamentals in Cybersecurity, Networking, Cryptography, And Setting Up a profissonal Lab.
+    Building a Strong Fundamentals in Cybersecurity, Networking, Cryptography, And Setting Up a profissonal Lab.
     
 Sub-Tasks:
+
  1.Cybersecurity Bascis.
     
  2.Lab Environment Setup.
@@ -22,22 +22,29 @@ Sub-Tasks:
                 representing three core principles that must be maintained to ensure data security.
 
 🔒 Confidentiality
-    Ensures that information is accessible only to authorized individuals and remains protected from unauthorized access.
+                Ensures that information is accessible only to authorized individuals and remains protected from unauthorized access.
 
 Key Implementation Methods:
 
-. Authentication mechanisms: Username/password combinations, multi-factor authentication
-. Access controls: Role-based permissions, least privilege principle
-. Encryption: Data encryption at rest and in transit
-. Physical security: Secure storage facilities, locked workstations
+-> Authentication mechanisms: Username/password combinations, multi-factor authentication
+
+-> Access controls: Role-based permissions, least privilege principle
+ 
+-> Encryption: Data encryption at rest and in transit
+
+-> Physical security: Secure storage facilities, locked workstations
 
 Common Attacks:
 
-. Data breaches and unauthorized access
-. Card skimming and identity theft
-. Keylogging and credential harvesting
-. Phishing and social engineering
-. Dumpster diving for sensitive documents
+-> Data breaches and unauthorized access
+
+-> Card skimming and identity theft
+
+-> Keylogging and credential harvesting
+
+-> Phishing and social engineering
+
+-> Dumpster diving for sensitive documents
 
 🛡️ Integrity
     Ensures that information remains accurate, complete, and unaltered by unauthorized parties during storage and transmission.
@@ -104,54 +111,54 @@ Common Attacks:
    -> Viruses: Self-replicating programs that attach to legitimate programs and spread when those programs are executed.
                     
    -> Worms: Self-replicating malware that spreads independently across networks.
-                    - Trojans: Malicious programs disguised as legitimate software to trick users into installing them.
-                    . Spyware: Software that secretly monitors and collects information about user activity.
-                    . Adware: Software that displays unwanted advertisements.
+                    1 Trojans: Malicious programs disguised as legitimate software to trick users into installing them.
+                    2  Spyware: Software that secretly monitors and collects information about user activity.
+                    3 Adware: Software that displays unwanted advertisements.
 
-3. DDoS (Distributed Denial of Service): In a DDoS attack, multiple compromised computer systems (a botnet) are used to flood a target server, website, or network                                resource with an overwhelming amount of traffic.
-
-4. This overload prevents legitimate users from accessing the service, effectively denying them service.
+3. DDoS (Distributed Denial of Service): In a DDoS attack, multiple compromised computer systems (a botnet) are used to flood a target server, website, or network                                resource with an overwhelming amount of traffic. this overload prevents legitimate users from accessing the service, effectively denying them service.
 
     4. SQL Injection: This attack exploits vulnerabilities in web applications that use SQL databases. Attackers insert malicious SQL code into input fields (like login forms) to manipulate the database, 
                         potentially gaining unauthorized access to data, modifying data, or executing administrative commands.
 
-    5. Brute Force: A brute force attack involves systematically trying every possible combination of characters to guess a password, encryption key, or other credentials. 
-                    Attackers use automated tools to rapidly test numerous possibilities until the correct one is found.
+    5. Brute Force: A brute force attack involves systematically trying every possible combination of characters to guess a password, encryption key, or other credentials. Attackers use automated tools to rapidly test numerous possibilities until the correct one is found.
 
     6. Ransomware: This is a type of malware that encrypts a victim's files or locks their computer system, demanding a ransom payment (usually in cryptocurrency) in exchange for restoring access. If the ransom is not paid, the data may remain encrypted or be published.
 
                 
 👉 Attack Vector :
                 An attack vector is a pathway or method used by a hacker to illegally access a network or computer in an attempt to exploit system vulnerabilities. 
-                Hackers use numerous attack vectors to launch attacks that take advantage of system weaknesses, cause a data breach, or steal login credentials. 
-                Such methods include sharing malware and viruses, malicious email attachments and web links, pop-up windows, and instant messages that involve the attacker duping an employee or individual user.
+                
+Hackers use numerous attack vectors to launch attacks that take advantage of system weaknesses, cause a data breach, or steal login credentials. 
+                
+Such methods include sharing malware and viruses, malicious email attachments and web links, pop-up windows, and instant messages that involve the attacker duping an employee or individual user.
 
- 🏹 Types of Vector Attacks:
-         . Social engineering.
-         .  wireless attacks. 
-         . insider threats.
-            These all common attack vectors, which are pathways attackers use to gain access to systems and data.
+🏹 Types of Vector Attacks:
+         1 Social engineering.
+         2 wireless attacks. 
+         3 insider threats.
+            
+These all common attack vectors, which are pathways attackers use to gain access to systems and data.
 
 1.  Social engineering: Attacks that rely on human psychology to manipulate individuals into making security mistakes or giving away sensitive information.
 
    Examples:
-            . Phishing: Sending fraudulent emails to trick people into revealing information.
-            . Vishing: Voice phishing, or phone-based phishing.
-            . Smishing: SMS phishing, or text message-based phishing.
-            . Pretexting: Creating a fabricated scenario to get information. 
+            1 Phishing: Sending fraudulent emails to trick people into revealing information.
+            2 Vishing: Voice phishing, or phone-based phishing.
+            3 Smishing: SMS phishing, or text message-based phishing.
+            4 Pretexting: Creating a fabricated scenario to get information. 
 
 2. Wireless attacks : Attacks that target wireless networks and devices, such as Wi-Fi networks.
 
     Examples:
-            . Rogue access points: Setting up a malicious Wi-Fi hotspot that looks legitimate to intercept data.
-            . Packet sniffing: Intercepting and analyzing data packets sent over a wireless network.
-            . Denial-of-service (DoS) attacks: Overloading a wireless network with traffic to make it unusable. 
+            1 Rogue access points: Setting up a malicious Wi-Fi hotspot that looks legitimate to intercept data.
+            2  Packet sniffing: Intercepting and analyzing data packets sent over a wireless network.
+            3 Denial-of-service (DoS) attacks: Overloading a wireless network with traffic to make it unusable. 
                         
     3. Insider threats: Security risks originating from inside an organization, which can be intentional or unintentional.
 
          Examples:
-            . Malicious insiders: Employees, former employees, or contractors who intentionally cause harm, such as stealing data.
-            . Accidental insiders: Employees who, through negligence, cause a data breach, such as accidentally clicking a phishing link or misconfiguring a system. 
+            1 Malicious insiders: Employees, former employees, or contractors who intentionally cause harm, such as stealing data.
+            2 Accidental insiders: Employees who, through negligence, cause a data breach, such as accidentally clicking a phishing link or misconfiguring a system. 
 
 Note: Sub-task 3 is in different file , because its easy to acees , and sub- task is not a theoritical task.
 
