@@ -177,14 +177,11 @@ Threats originating from individuals with internal access.
 
 * Malicious insiders
 * Accidental insiders
+
+**Note**: Sub-task 3 (Linux Fundamentals) is maintained in a separate file to ensure modular access and streamlined reading.
+
 ---
-
-Note: Sub-task 3 (Linux Fundamentals) is maintained in a separate file to ensure modular access and streamlined reading.
-
----
-
-4. Networing Basics:
-
+###4.**Networing Basics**:
 ---
   ![OSI Model](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/OSI_Model.jpg?raw=1)
 
