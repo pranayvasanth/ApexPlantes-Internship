@@ -59,7 +59,7 @@ Key Implementation Methods:
 
  -> Version control: Tracking changes and maintaining data consistency
 
-Common Attacks:
+Common Attacks: 
 
  -> Man-in-the-Middle (MITM) attacks.
 
