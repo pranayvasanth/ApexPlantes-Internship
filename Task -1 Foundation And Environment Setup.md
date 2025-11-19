@@ -244,3 +244,21 @@ The presentation layer is also called the Translation layer. The data from the a
 * Translation: For example, ASCII to EBCDIC.
 * Encryption/ Decryption: Data encryption translates the data into another form or code. The encrypted data is known as the ciphertext, and the decrypted data is known as plain text. A key value is used for encrypting as well as decrypting data.
 * Compression: Reduces the number of bits that need to be transmitted on the network.
+
+
+## **Layer 7: Application Layer** : 
+
+At the very top of the OSI Reference Model stack of layers, we find the Application layer which is implemented by the network applications. These applications produce the data to be transferred over the network.
+      
+* This layer also serves as a window for the application services to access the network and for displaying the received information to the user.
+* Protocols used in the Application layer are SMTP, FTP, DNS, etc.
+
+![application layer](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/application-layer.gif?raw=true)
+
+**Functions of the Application Layer** :
+The main functions of the application layer are given below.
+
+* Network Virtual Terminal (NVT): It allows a user to log on to a remote host.
+* File Transfer Access and Management (FTAM): This application allows a user to access files in a remote host, retrieve files in a remote host, and manage or control files from a remote computer.
+* Mail Services: Provide email service.
+* Directory Services: This application provides distributed database sources and access for global information about various objects and services.
