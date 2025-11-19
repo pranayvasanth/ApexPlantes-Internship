@@ -1,4 +1,5 @@
-Objectives:
+## Objectives:
+
 The primary objectives of this module are to build strong fundamentals in:
 
 * Cybersecurity
@@ -177,11 +178,14 @@ The OSI (Open Systems Interconnection) Model is a set of rules that explains how
  
 
    ![OSI Model](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/OSI_Model.jpg?raw=1)
+  
 
 ## **Layer 1: Physical Layer** : 
 
 The lowest layer of the OSI reference model is the Physical Layer. It is responsible for the actual physical connection between the devices. The physical layer contains information in the form of bits.
 
+ ![physical layer](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/physical-layer-768.gif?raw=true)
+                        
  * The Physical Layer is responsible for transmitting individual bits from one node to the next.
  * When receiving data, this layer will get the signal received and convert it into 0s and 1s and send them to the Data Link layer, which will put the frame back together.
 
@@ -218,3 +222,4 @@ The transport layer provides services to the application layer and takes service
 * Generally, this destination port number is configured, either by default or manually.
 * Example: when a web application requests a web server, it typically uses port number 80, because this is the default port assigned to web applications. Many applications have default ports assigned.
 * At the Receiver’s side, Transport Layer reads the port number from its header and forwards the Data which it has received to the respective application. It also performs sequencing and reassembling of the segmented data.
+      
