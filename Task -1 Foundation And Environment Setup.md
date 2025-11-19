@@ -1,4 +1,4 @@
-## Objectives:
+## Objectives :
 
 The primary objectives of this module are to build strong fundamentals in:
 
@@ -229,8 +229,18 @@ Session Layer in the OSI Model is responsible for the establishment of connectio
 
  ![session layer](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/communication.jpg?raw=true)
 
-**=> Functions of the Session Layer**:
+**=> Functions of the Session Layer** :
 
 * Session Establishment, Maintenance, and Termination: The layer allows the two processes to establish, use, and terminate a connection.
 * Synchronisation: This layer allows a process to add checkpoints that are considered synchronisation points in the data. These synchronisation points help to identify the error so that the data is re-synchronised properly, and ends of the messages are not cut prematurely,and data loss is avoided.
 * Dialog Controller: The session layer allows two systems to start communication with each other in half-duplex or full-duplex.
+
+
+## **Layer 6: Presentation Layer** :
+The presentation layer is also called the Translation layer. The data from the application layer is extracted here and manipulated as per the required format to transmit over the network. Protocols used in the Presentation Layer are TLS/SSL (Transport Layer Security / Secure Sockets Layer).JPEG, MPEG, GIF, are standards or formats used for encoding data, which is part of the presentation layer’s role.
+
+**=> Functions of the Presentation Layer** :
+
+* Translation: For example, ASCII to EBCDIC.
+* Encryption/ Decryption: Data encryption translates the data into another form or code. The encrypted data is known as the ciphertext, and the decrypted data is known as plain text. A key value is used for encrypting as well as decrypting data.
+* Compression: Reduces the number of bits that need to be transmitted on the network.
