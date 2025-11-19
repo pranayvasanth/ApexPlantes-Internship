@@ -184,7 +184,7 @@ The OSI (Open Systems Interconnection) Model is a set of rules that explains how
 
 The lowest layer of the OSI reference model is the Physical Layer. It is responsible for the actual physical connection between the devices. The physical layer contains information in the form of bits.
 
- ![physical layer](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/physical-layer-768.gif?raw=true)
+ ![physical layer](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/physical-layer-768.png?raw=true)
                         
  * The Physical Layer is responsible for transmitting individual bits from one node to the next.
  * When receiving data, this layer will get the signal received and convert it into 0s and 1s and send them to the Data Link layer, which will put the frame back together.
