@@ -215,11 +215,22 @@ The network layer works for the transmission of data from one host to the other 
 ## **Layer 4: Transport Layer** :
 The transport layer provides services to the application layer and takes services from the network layer. The data in the transport layer is referred to as Segments. It is responsible for the end-to-end delivery of the complete message.
 
-* The transport layer also provides the acknowledgment of the successful data transmission and re-transmits the data if an error is found.
-* Protocols used in Transport Layer are TCP, UDP NetBIOS, PPTP.
+* The transport layer also provides the acknowledgement of the successful data transmission and re-transmits the data if an error is found.
+* Protocols used in the Transport Layer are TCP, UDP NetBIOS, PPTP.
 * At the sender's side, the transport layer receives the formatted data from the upper layers, performs Segmentation, and also implements Flow and error control to ensure proper data transmission.
 * It also adds Source and Destination port number in its header and forwards the segmented data to the Network Layer.
 * Generally, this destination port number is configured, either by default or manually.
 * Example: when a web application requests a web server, it typically uses port number 80, because this is the default port assigned to web applications. Many applications have default ports assigned.
 * At the Receiver’s side, Transport Layer reads the port number from its header and forwards the Data which it has received to the respective application. It also performs sequencing and reassembling of the segmented data.
       
+## **Layer 5: Session Layer** :
+
+Session Layer in the OSI Model is responsible for the establishment of connections, management of connections, terminations of sessions between two devices. It also provides authentication and security. Protocols used in the Session Layer are NetBIOS, PPTP.
+
+ ![session layer](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/communication.jpg?raw=true)
+
+**=> Functions of the Session Layer**:
+
+* Session Establishment, Maintenance, and Termination: The layer allows the two processes to establish, use, and terminate a connection.
+* Synchronisation: This layer allows a process to add checkpoints that are considered synchronisation points in the data. These synchronisation points help to identify the error so that the data is re-synchronised properly, and ends of the messages are not cut prematurely,and data loss is avoided.
+* Dialog Controller: The session layer allows two systems to start communication with each other in half-duplex or full-duplex.
