@@ -325,12 +325,12 @@ The Network Access Layer is the bottom layer of the TCP/IP model. It deals with 
 * This layer makes sure that data can travel over the hardware, such as wires, switches, or wireless signals.
 * It also handles important tasks like using MAC addresses to identify devices, creating frames (the format used to send data over the physical link), and checking for basic errors during transmission.
 
-## ***Working of TCP/IP Model* **
+## ***Working of TCP/IP Model***
 The working of TCP/IP can be explained with the help of the diagram given below and explained :
 
 ![Tcp image-1](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/tcp_ip-1.webp?raw=true)
 
-### **TCP/IP WORKING MODEL** :
+ **TCP/IP WORKING MODEL** :
 
 ### When Sending Data (From Sender to Receiver)
 
