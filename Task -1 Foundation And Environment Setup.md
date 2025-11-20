@@ -325,12 +325,13 @@ The Network Access Layer is the bottom layer of the TCP/IP model. It deals with 
 * This layer makes sure that data can travel over the hardware, such as wires, switches, or wireless signals.
 * It also handles important tasks like using MAC addresses to identify devices, creating frames (the format used to send data over the physical link), and checking for basic errors during transmission.
 
-## ***Working of TCP/IP Model***
+## ***Working of TCP/IP Model*** :
+
 The working of TCP/IP can be explained with the help of the diagram given below and explained :
 
 ![Tcp image-1](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/tcp_ip-1.webp?raw=true)
 
- **TCP/IP WORKING MODEL** :
+
 
 ### When Sending Data (From Sender to Receiver)
 
@@ -346,3 +347,59 @@ The working of TCP/IP can be explained with the help of the diagram given below 
 * Transport Layer: Reassembles segments, checks for errors, and ensures data is complete.
 * Application Layer: Delivers the final data to the correct application (e.g., displays a web page in the browser).
 
+## Domain Name System (DNS) :
+
+DNS is a hierarchical and distributed naming system that translates domain names into IP addresses. When you type a domain name like www.github.com into your browser, DNS ensures that the request reaches the correct server by resolving the domain to its corresponding IP address.
+
+### ***Working of DNS*** :
+
+The DNS process can be broken down into several steps, ensuring that users can access websites by simply typing a domain name into their browser. 
+
+
+* User Input: You enter a website address (for example, www.github.com) into your web browser.
+* Local Cache Check: Your browser first checks its local cache to see if it has recently looked up the domain. If it finds the corresponding IP address, it uses that directly without querying external servers.
+* DNS Resolver Query: If the IP address isn’t in the local cache, your computer sends a request to a DNS resolver. The resolver is typically provided by your Internet Service Provider (ISP) or your network settings.
+* Root DNS Server: The resolver sends the request to a root DNS server. The root server doesn’t know the exact IP address for www.geeksforgeeks.org but knows which Top-Level Domain (TLD) server to query based on the domain’s extension (e.g., .org, com, etc).
+* TLD Server: The TLD server for .org directs the resolver to the authoritative DNS server for geeksforgeeks.org.
+Authoritative DNS Server: This server holds the actual DNS records for geeksforgeeks.org, including the IP address of the website’s server. It sends this IP address back to the resolver.
+* Final Response: The DNS resolver sends the IP address to your computer, allowing it to connect to the website’s server and load the page.
+
+### ***Structure of DNS*** :
+
+DNS operates through a hierarchical structure, ensuring scalability and reliability across the global internet infrastructure. Here's how it’s organized:
+
+![DNS root-image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/root_dns_server.webp?raw=true)
+
+* Root DNS Servers: These are the highest-level DNS servers and know where to find the TLD servers. They are crucial for directing DNS queries to the correct locations.
+* TLD Servers: These servers manage domain extensions like .com, .org, .net, .edu, .gov and others. They help route queries to the authoritative DNS servers for specific domains.
+* Authoritative DNS Servers: These are the servers that store the actual DNS records for domain names. They are responsible for providing the correct IP addresses that allow users to reach websites.
+
+### ***Types of Domains*** :
+
+DNS helps manage a wide variety of domain types to organize the vast number of websites on the internet. Here are the primary categories:
+
+* Generic Domains: These include top-level domains like .com, .org, .net and .edu. These are widely used and recognized across the world.
+* Country Code Domains: These domains represent specific countries or regions, such as .in for India, .us for the United States, .uk for the United Kingdom and .jp for Japan.
+* Inverse Domains: Used for reverse DNS lookups, these domains help map IP addresses back to domain names. Reverse DNS lookups are useful for diagnostics and security purposes, ensuring that the source of network traffic is legitimate. So DNS can provide both the mapping for example to find the IP addresses of github.com then we have to type  "nslookup www.github.com"
+
+  ![DNS domain-root-image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/root.webp?raw=true)
+
+## **Domain Name Server** :
+
+The client machine sends a request to the local name server, which, if the root does not find the address in its database, sends a request to the root name server, which in turn, will route the query to a top-level domain (TLD) or authoritative name server.
+
+* The root name server can also contain some hostName to IP address mappings.
+* The Top-level domain (TLD) server always knows who the authoritative name server is.
+* So finally the IP address is returned to the local name server which in turn returns the IP address to the host.
+
+### ***DNS Lookup*** :
+
+DNS Lookup, also called DNS Resolution, is the process of translating a human-readable domain name into its corresponding IP address. The process involves:
+
+* DNS Resolver: Initiates the lookup process. Also called a DNS client.
+* Recursive Query: Resolver queries multiple servers on behalf of the client until the IP is found.
+* Iterative Query: Resolver asks servers for the best answer available.
+* Non-Recursive Query: Resolver queries a server that already has the record in its cache.
+
+ ### ***Note** : 
+ => for Deep understanding Visit (https://www.geeksforgeeks.org/computer-networks/domain-name-system-dns-in-application-layer).
