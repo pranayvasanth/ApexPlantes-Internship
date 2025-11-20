@@ -289,7 +289,7 @@ The TCP/IP model is a framework that is used to model the communication in a net
 
 One of its main goals is to make sure that the data sent by the sender arrives safely and correctly at the receiver’s end. To do this, the data is broken down into smaller parts called packets before being sent. These packets travel separately and are reassembled in the correct order when they reach the destination.
 
-![Tc[p image-2](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/tcp_ip-2.webp?raw=true)
+![Tcp image-2](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/tcp_ip-2.webp?raw=true)
 
 
 ## **Layers of TCP/IP Model** :
@@ -330,7 +330,7 @@ The working of TCP/IP can be explained with the help of the diagram given below 
 
 ![Tcp image-1](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/tcp_ip-1.webp?raw=true)
 
-**TCP/IP WORKING MODEL**
+### **TCP/IP WORKING MODEL** :
 
 ### When Sending Data (From Sender to Receiver)
 
