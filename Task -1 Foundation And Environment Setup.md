@@ -275,5 +275,74 @@ When we transfer information from one device to another, it travels through 7 la
 * Session Layer: Connections are established and managed.
 * Transport Layer: Data is broken into segments for reliable delivery.
 * Network Layer: Segments are packaged into packets and routed.
-* Data Link Layer: Packets are framed and sent to the next device.
+* Data Link Layer: Packets are framed and sent to the next device.      
 * Physical Layer: Frames are converted into bits and transmitted physically.
+
+## **TCP/IP Protocol Suite**:
+
+The TCP/IP model is a framework that is used to model the communication in a network. It is mainly a collection of network protocols and organization of these protocols in different layers for modeling the network.
+
+* It has four layers, Application, Transport, Network/Internet and Network Access.
+* While the OSI model has seven layers, the 4 layer TCP/IP model is simpler and commonly used in today’s Internet and networking systems.
+
+### **Role of TCP/IP** :
+
+One of its main goals is to make sure that the data sent by the sender arrives safely and correctly at the receiver’s end. To do this, the data is broken down into smaller parts called packets before being sent. These packets travel separately and are reassembled in the correct order when they reach the destination.
+
+![Tc[p image-2](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/tcp_ip-2.webp?raw=true)
+
+
+## **Layers of TCP/IP Model** :
+
+***1. Application Layer*** : 
+
+The Application Layer is the top layer of the TCP/IP model and the one closest to the user. This is where all the apps you use like web browsers, email clients, or file sharing tools connect to the network.
+
+* It acts like a bridge between your software (like Chrome, Gmail, or WhatsApp) and the lower layers of the network that actually send and receive data.
+* It supports different protocols like HTTP (for websites), FTP (for file transfers), SMTP (for emails), and DNS (for finding website addresses).
+* It also manages things like data formatting, so both sender and receiver understand the data, encryption to keep data safe, and session management to keep track of ongoing connections.
+ 
+***2. Transport Layer*** :
+
+The Transport Layer is responsible for making sure that data is sent reliably and in the correct order between devices. It checks that the data you send like a message, file, or video arrives safely and completely.
+
+* This layer uses two main protocols: TCP and UDP, depending on whether the communication needs to be reliable or faster.
+* TCP is used when data must be correct and complete, like when loading a web page or downloading a file.
+* It checks for errors, resends missing pieces, and keeps everything in order. On the other hand, UDP (User Datagram Protocol) is faster but doesn’t guarantee delivery useful for things like live video or online games where speed matters more than perfect accuracy.
+
+***3. Internet Layer*** :
+
+The Internet Layer is used for finding the best path for data to travel across different networks so it can reach the right destination. It works like a traffic controller, helping data packets move from one network to another until they reach the correct device.
+
+* This layer uses the Internet Protocol (IP) to give every device a unique IP address, which helps identify where data should go.
+* The main job of this layer is routing deciding the best way for data to travel.
+* It also takes care of packet forwarding (moving data from one point to another), fragmentation (breaking large data into smaller parts), and addressing.
+
+***4. Network Access Layer*** :
+
+The Network Access Layer is the bottom layer of the TCP/IP model. It deals with the actual physical connection between devices on the same local network like computers connected by cables or communicating through Wi-Fi.
+
+* This layer makes sure that data can travel over the hardware, such as wires, switches, or wireless signals.
+* It also handles important tasks like using MAC addresses to identify devices, creating frames (the format used to send data over the physical link), and checking for basic errors during transmission.
+
+## ***Working of TCP/IP Model* **
+The working of TCP/IP can be explained with the help of the diagram given below and explained :
+
+![Tcp image-1](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/tcp_ip-1.webp?raw=true)
+
+**TCP/IP WORKING MODEL**
+
+### When Sending Data (From Sender to Receiver)
+
+* Application Layer: Prepares user data using protocols like HTTP, FTP, or SMTP.
+* Transport Layer (TCP/UDP): Breaks data into segments and ensures reliable (TCP) or fast (UDP) delivery.
+* Internet Layer (IP): Adds IP addresses and decides the best route for each packet.
+* Link Layer (Network Access Layer): Converts packets into frames and sends them over the physical network.
+
+### When Receiving Data (At the Destination)
+
+* Link Layer: Receives bits from the network and rebuilds frames to pass to the next layer.
+* Internet Layer: Checks the IP address, removes the IP header, and forwards data to the Transport Layer.
+* Transport Layer: Reassembles segments, checks for errors, and ensures data is complete.
+* Application Layer: Delivers the final data to the correct application (e.g., displays a web page in the browser).
+
