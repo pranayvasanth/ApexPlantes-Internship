@@ -450,3 +450,28 @@ The most common version, IPv4, uses a 32-bit address, typically written as four 
 
 * Public IP Address: Globally unique and routable on the public internet. Assigned to a router/gateway by an Internet Service Provider (ISP).
 * Private IP Address: Used within a private network (like a home or office LAN) and are not routable on the public internet. Specific ranges are reserved for private use (e.g., $192.168.0.0/16$).
+
+
+## 🗂️ Subnetting :
+
+Subnetting is the process of dividing a large network into smaller, more manageable sub-networks, or subnets. This is done by "borrowing" bits from the host portion of an IP address and adding them to the network portion.
+
+### ***Purpose*** :
+
+* Efficient IP Address Management: It prevents the waste of IP addresses by creating subnets that closely match the required number of devices.
+* Reduce Network Congestion (Broadcast Domain): Each subnet is its own broadcast domain. By limiting the size of these domains, network traffic (especially broadcast traffic) is reduced, improving performance.
+* Enhanced Security: Subnets can isolate critical systems or departments, limiting the scope of network access and potential security breaches.
+* Optimized Routing: Routers only need to know how to reach the different subnets, not every individual host, which simplifies routing tables and speeds up packet forwarding.
+
+![subneting image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/Subnet.png?raw=true)
+
+### ***Subnet Mask*** :
+
+A subnet mask is a 32-bit number used to determine which part of an IP address is the network portion and which is the host portion. In the binary representation
+* 1s in the mask correspond to the Network Portion.
+* 0s in the mask correspond to the Host Portion.
+
+ #### For example, for the IP address $192.168.1.1$ and the subnet mask $255.255.255.0$ (or $/24$ in CIDR notation):
+
+* $192.168.1.$ is the Network Portion.
+* .1 is the Host Portion.
