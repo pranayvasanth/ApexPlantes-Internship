@@ -403,3 +403,28 @@ DNS Lookup, also called DNS Resolution, is the process of translating a human-re
 
  ### ***Note** : 
  => for Deep understanding Visit (https://www.geeksforgeeks.org/computer-networks/domain-name-system-dns-in-application-layer).
+
+
+## HTTPS / HTTP :
+
+HTTP and HTTPS are protocols for transferring data between a web browser and a website; HTTP is the basic, unsecured protocol that sends data in plain text, while HTTPS is the secure, encrypted version that adds a layer of security using TLS/SSL encryption. 
+
+* HTTPS uses port 443, whereas HTTP uses port 80. Key differences include encryption (HTTP is unsecured, HTTPS is secured), data transmission (HTTP is plain text, HTTPS is encrypted), and URL prefix (http:// vs. https://).
+
+  ### ***HTTP(Hypertext Transfer Protocol)*** :
+
+* What it is: The foundational protocol for data communication on the web.
+* How it works: Your browser uses it to send requests to a server and receive a response, which is how web pages are loaded.
+* Security: Sends data in plain text. This is like sending a postcard—anyone who intercepts it can read it.
+* Port: Uses port 80 by default.
+* Use case: Suitable for non-sensitive data transfer.
+
+  ### ***HTTPS(Hypertext Transfer Protocol Secure)*** :
+
+* What it is: The secure version of HTTP, providing encryption and verification.
+* How it works: It wraps HTTP in a security layer using protocols like TLS (Transport Layer Security) or SSL (Secure Sockets Layer).
+* Security: Encrypts the data sent between your browser and the server, making it unreadable to those who might intercept it. This is like sending a message in a locked box.
+* Port: Uses port 443 by default.
+* Use case: Essential for transmitting sensitive information like passwords, credit card numbers, and other personal data. Modern browsers will flag non-HTTPS sites as "not secure". 
+
+   
