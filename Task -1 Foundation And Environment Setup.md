@@ -427,4 +427,26 @@ HTTP and HTTPS are protocols for transferring data between a web browser and a w
 * Port: Uses port 443 by default.
 * Use case: Essential for transmitting sensitive information like passwords, credit card numbers, and other personal data. Modern browsers will flag non-HTTPS sites as "not secure". 
 
-   
+
+## 🌐 IP Addressing :
+
+An Internet Protocol (IP) address is a unique numerical label assigned to every device (like a computer, printer, or router) that is connected to a computer network and uses the Internet Protocol for communication.
+
+### ***Purpose*** :
+
+* Identification: It identifies the specific device (host) on the network.
+* Location: It provides the location of the device in the network, allowing data to be routed to the correct destination.
+
+### ***Structure (IPv4)*** :
+The most common version, IPv4, uses a 32-bit address, typically written as four decimal numbers (octets) separated by periods, like 192.168.1.1. Each IP address is logically divided into two parts:
+
+![ipv4 image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/ipv4.png?raw=true)
+
+1. Network Portion: Identifies the specific network the device is on.
+
+2. Host Portion: Identifies the specific device within that network.
+
+### ***Types of IP Addresses*** :
+
+* Public IP Address: Globally unique and routable on the public internet. Assigned to a router/gateway by an Internet Service Provider (ISP).
+* Private IP Address: Used within a private network (like a home or office LAN) and are not routable on the public internet. Specific ranges are reserved for private use (e.g., $192.168.0.0/16$).
