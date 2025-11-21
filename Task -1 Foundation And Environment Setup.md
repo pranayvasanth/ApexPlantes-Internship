@@ -475,3 +475,24 @@ A subnet mask is a 32-bit number used to determine which part of an IP address i
 
 * $192.168.1.$ is the Network Portion.
 * .1 is the Host Portion.
+
+## 🔁 **Network Address Translation (NAT)**  :
+
+Network Address Translation (NAT) is a technique typically implemented on a router that allows multiple devices in a private network (each with a private IP address) to share a single, public IP address when accessing the internet.
+
+* PurposeIP Address Conservation: It is the primary solution to the exhaustion of IPv4 public addresses. By allowing thousands of private IP addresses to use one public IP, NAT conserves the limited public address space.
+
+* Security (Hiding Internal Structure): It hides the private IP addresses and the internal structure of the local network from the outside world, adding a layer of security.
+
+
+### ***How NAT Works (The Most Common Type: PAT/NAT Overload)*** :
+
+The most common form, Port Address Translation (PAT) or NAT Overload, allows many private IP addresses to share one public IP address by using different port numbers for each device's traffic.
+
+![Nat image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/NAT.webp?raw=true)
+
+* A device in the private network (e.g., $192.168.1.10$) sends a request to the internet.The router intercepts the packet.
+* It changes the source IP address from the private IP ($192.168.1.10$) to its own public IP address.To distinguish which internal device the returning traffic belongs to, the router also changes the source port number to a unique, available port number.
+* The router records this translation in a NAT table (Private IP + Private Port $\rightarrow$ Public IP + New Port).
+* When the response packet returns to the router's public IP, the router checks the destination port number in the packet against its NAT table.
+* The router uses the table entry to translate the destination IP and port back to the original private IP and port, forwarding the packet to the correct internal device.
