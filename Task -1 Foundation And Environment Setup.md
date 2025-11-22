@@ -496,3 +496,42 @@ The most common form, Port Address Translation (PAT) or NAT Overload, allows man
 * The router records this translation in a NAT table (Private IP + Private Port $\rightarrow$ Public IP + New Port).
 * When the response packet returns to the router's public IP, the router checks the destination port number in the packet against its NAT table.
 * The router uses the table entry to translate the destination IP and port back to the original private IP and port, forwarding the packet to the correct internal device.
+
+
+# 5. Cryptography Basics :
+
+## **Symmetric Encryption** : 
+
+### **What is a Symmetric Encryption?** 
+
+When the plain text is encrypted and decrypted using the same key, it is known as symmetric encryption. It is also known as "shared-key" or "private-key" encryption. It ensures confidentiality by ensuring only authorized parties with the key can access the original data.
+
+* The key is a piece of a shared secret between the two parties involved, hence it is 'shared-key' and is kept secret, hence the name 'private-key' is justified.
+
+### **How does Symmetric Encryption Work?** :
+
+From key generation to decryption, multiple steps are involved when symmetric encryption is applied. These are the steps involved in sharing a message securely over the network using the symmetric encryption technique.
+
+![symmetric_encryption](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/symmetric_encryption.webp?raw=true)
+
+**1. Key Generation** :
+
+* The first step involves selecting a private key. A secure key is generated using algorithms like PBKDF2 (Password-Based Key Derivation Function 2) or hardware random number generators. This key must be securely shared or transferred over the network for future use.
+
+* Example: A 256-bit AES key: 3A7F2B4E... (32-byte hexadecimal string).
+
+**2. Encryption** :
+
+* In this step, the original message (plain text) is transformed into unreadable text (ciphertext) ,and the plaintext is processed in blocks or streams using an encryption algorithm and the secret key.
+
+* Example: AES-256 in CBC (Cipher Block Chaining) mode encrypts a 128-bit block of plaintext with the key and an initialization vector (IV) to produce ciphertext.
+
+**3. Transfer of Cipher text** :
+
+* The encrypted message (ciphertext) is then sent over the network. Even if intercepted, it remains unreadable to the attacker unless they have access to the shared secret key and the algorithm used for encryption.
+
+**4. Decryption** :
+* In the final step, the recipient uses the same secret key and a reverse encryption algorithm to convert the cipher text back into the original message (plain text).
+
+
+
