@@ -534,4 +534,54 @@ From key generation to decryption, multiple steps are involved when symmetric en
 * In the final step, the recipient uses the same secret key and a reverse encryption algorithm to convert the cipher text back into the original message (plain text).
 
 
+## Asymmetric Encryption
 
+Asymmetric encryption, also known as public-key cryptography, is a type of encryption that uses a pair of keys to encrypt and decrypt data. The pair of keys includes a public key, which can be shared with anyone, and a private key, which is kept secret by the owner.
+
+* In asymmetric encryption, the sender uses the recipient's public key to encrypt the data. The recipient then uses their private key to decrypt the data. This approach allows for secure communication between two parties without the need for both parties to have the same secret key.
+
+### The Main Features of Asymmetric Encryption (also known as public-key cryptography) are:
+
+![features_of_asymmetric_encryption](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/features_of_asymmetric_encryption.webp?raw=true)
+
+* Dual keys: Asymmetric encryption uses a pair of keys, including a public key and a private key. The public key can be freely shared with anyone, while the private key is kept secret and known only to the key owner.
+
+* Encryption and decryption: Asymmetric encryption uses the public key to encrypt data and the private key to decrypt data. This allows secure communication between two parties without the need to exchange secret keys.
+* Digital signatures: Asymmetric encryption enables the creation of digital signatures, which can be used to verify the authenticity of data. A digital signature is created by encrypting a hash of the data with the sender's private key.
+* Secure key exchange: Asymmetric encryption allows for secure key exchange, which is a critical feature in secure communication. For example, the Diffie-Hellman key exchange algorithm uses asymmetric encryption to establish a shared secret key between two parties without exchanging the key itself.
+
+### How Does Asymmetric Encryption Works?
+
+**Here are the steps for how asymmetric encryption works :**
+
+![asymmetric_encryption](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/asymmetric_encryption.webp?raw=true)
+
+
+**Step 1. Key Pair Generation** :
+
+* The first step in asymmetric encryption is generating a pair of keys: a public key and a private key.
+* The public key is shared openly, while the private key is kept secret.
+
+**Step 2. Encryption** :
+
+* The sender uses the public key of the recipient to encrypt the message.
+* The public key is used because it is freely available and can be used to convert the message into an unreadable format (cipher text).
+
+**Step 3. Transmission** :
+
+* The encrypted message (cipher text) is sent over the network to the recipient. Even if intercepted by someone, it remains unreadable without the corresponding private key.
+
+**Step 4. Decryption** :
+
+* Upon receiving the encrypted message, the recipient uses their private key to decrypt it.
+* The private key is kept secure and is never shared, ensuring that only the intended recipient can decrypt and read the message.
+
+**Step 5. Verification (Digital Signature)** :
+
+* In some cases, the sender may also sign the message using their private key to ensure its authenticity.
+* The recipient can verify the signature using the sender's public key, confirming that the message was not tampered with and was indeed sent by the intended sender.
+
+**Step 6. Result **:
+
+* Once decrypted, the message is returned to its original form (plain text), and the recipient can read it.
+* This method ensures both the confidentiality of the message (by using the recipient’s public key) and the integrity and authenticity (via digital signatures using the sender’s private key).
