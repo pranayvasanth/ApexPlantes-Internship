@@ -690,3 +690,19 @@ The TLS Handshake is the initial process where the client and server use the Dig
 4. Key Exchange :  Using the public key, the client and server securely generate a shared, temporary session key (symmetric key).
 5. Encrypted Session :  All subsequent data exchanged is encrypted and decrypted using this fast session key, ensuring confidentiality and data integrity.
 
+## Hands-on: Encrypt and Decrypt messages using OpenSSL :
+
+![Openssl image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/openssl.png?raw=true)
+
+
+##  Tool Familiarization :
+
+* Kali OS
+  ![Kali os image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/kali.png?raw=true)
+  
+* MetaSploitable OS
+  ![Metasploitable image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/MetaSploitable.png?raw=true)
+  
+* WireShark Ethernet Captures : tcp port=80, udp port=80
+  ![wireshark image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/wireshark%20captures.png?raw=true)
+  
