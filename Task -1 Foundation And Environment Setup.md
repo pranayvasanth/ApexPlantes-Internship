@@ -581,7 +581,53 @@ Asymmetric encryption, also known as public-key cryptography, is a type of encry
 * In some cases, the sender may also sign the message using their private key to ensure its authenticity.
 * The recipient can verify the signature using the sender's public key, confirming that the message was not tampered with and was indeed sent by the intended sender.
 
-**Step 6. Result **:
+**Step 6. Result** :
 
 * Once decrypted, the message is returned to its original form (plain text), and the recipient can read it.
 * This method ensures both the confidentiality of the message (by using the recipient’s public key) and the integrity and authenticity (via digital signatures using the sender’s private key).
+
+## Hashing (MD5,SHA256) 
+
+### 🔑 Key Concepts of Hashing
+
+A good cryptographic hash function has several essential properties:
+
+* Deterministic: The same input will always produce the same output hash.
+
+* One-way function: It's computationally infeasible to reverse the process—to reconstruct the original input from the hash value.
+
+* Collision Resistance: It's computationally infeasible to find two different inputs that produce the same hash output (a "collision"). Even a tiny change in the input should result in a drastically different hash (the avalanche effect).
+
+
+### 💡 Primary Uses :
+
+Integrity Check (File Verification): To ensure a file hasn't been tampered with during transmission or storage. If the calculated hash of the received file matches the original hash, the file is intact.
+
+
+* Password Storage: Instead of storing raw passwords, systems store the hash of the password. When a user tries to log in, the input password is hashed and compared to the stored hash. This protects the original password even if the database is compromised.
+
+
+
+### **MD5 (Message-Digest Algorithm 5)**
+
+MD5 is a widely known cryptographic hash function that produces a 128-bit (16-byte) hash value, typically rendered as a 32-character hexadecimal number.
+
+* Output Size: 128 bits.
+
+* Security Status: Obsolete/Insecure for Cryptographic Use.
+
+* Reason for Insecurity: Significant collision vulnerabilities have been found. It's now relatively easy to find two different messages that produce the same MD5 hash.
+
+* Current Use: Primarily for non-security-critical purposes like checksums to verify data integrity where collision resistance is not paramount.
+
+### **SHA-256 (Secure Hash Algorithm 256)** :
+
+SHA-256 is part of the SHA-2 family of cryptographic hash functions developed by the NSA. It is currently one of the most widely used and trusted hash functions.
+
+* Output Size: 256 bits (32 bytes), typically rendered as a 64-character hexadecimal number.
+
+* Security Status: Considered secure and is the current industry standard for many applications.
+
+* Key Features: It uses a more complex and robust algorithm than MD5, making it significantly more difficult to find collisions.
+
+* Prominent Use: It is the primary hash function used in Bitcoin and many other cryptocurrencies for generating block hashes and verifying transactions.
