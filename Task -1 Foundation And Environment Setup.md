@@ -631,3 +631,53 @@ SHA-256 is part of the SHA-2 family of cryptographic hash functions developed by
 * Key Features: It uses a more complex and robust algorithm than MD5, making it significantly more difficult to find collisions.
 
 * Prominent Use: It is the primary hash function used in Bitcoin and many other cryptocurrencies for generating block hashes and verifying transactions.
+
+
+## 📄 Digital Certificates (Public Key Certificates)
+
+A Digital Certificate is an electronic credential that authenticates the identity of an entity (like a server, person, or organization) using the Public Key Infrastructure (PKI).
+
+* They function as a digital ID card, enabling two parties to trust each other before exchanging sensitive information. The most common type is the TLS/SSL Certificate used by web servers.
+
+
+### **🧩 Key Components** : 
+
+  Component                   Purpose
+ 
+* Public Key                  Used by the client (e.g., your browser) to encrypt data that only the server can decrypt.
+
+*Identity Information         Details about the certificate holder (e.g., domain name, organization name).
+
+* Issuer Information          The name of the Certificate Authority (CA) that issued the certificate.
+
+* Digital Signature            The CA's signature, which the client verifies to ensure the certificate is genuine and                                 has not been tampered with.
+
+ 
+ ### 🤝 **How Trust is Established** :
+ 
+1. A server owner requests a certificate from a trusted third-party, a Certificate Authority (CA).
+2. The CA verifies the server owner's identity (e.g., ownership of the domain).
+3. The CA issues and digitally signs the certificate.
+4. Your browser (or operating system) comes with a pre-installed list of trusted CAs. When a server presents its certificate, your browser verifies the CA's signature.
+5. If the signature is valid, your browser trusts the server's public key and identity, establishing the authenticity of the connection.
+
+### 🔒 **SSL/TLS Protocols** :
+
+SSL (Secure Sockets Layer) and its successor, TLS (Transport Layer Security), are cryptographic protocols that provide secure, encrypted communication between a client (like your web browser) and a server.
+* The presence of these protocols is indicated by the HTTPS prefix and the padlock icon in your browser's address bar.
+
+### **🔄 TLS vs. SSL** : 
+
+**SSL is Obsolete** :  SSL versions (1.0, 2.0, 3.0) are all deprecated due to significant security vulnerabilities.
+**TLS is the Standard**: TLS is the secure and actively maintained successor.The latest versions are TLS 1.2 and TLS 1.3.
+**Terminology Confusion** : Though all modern security certificates operate using the TLS protocol, the term "SSL certificate" persists widely due to historical usage.
+## ✋ **The TLS Handshake** :
+
+The TLS Handshake is the initial process where the client and server use the Digital Certificate to securely set up an encrypted channel:
+
+1. Client Hello: The client sends a message including its supported TLS versions and cipher suites.
+2. Server Hello & Certificate: The server responds, selects the strongest mutually supported encryption methods, and sends its Digital Certificate (containing its Public Key).
+3. Authentication: The client verifies the server's certificate against its list of trusted CAs.
+4. Key Exchange: Using the public key, the client and server securely generate a shared, temporary session key (symmetric key).
+5. Encrypted Session: All subsequent data exchanged is encrypted and decrypted using this fast session key, ensuring confidentiality and data integrity.
+
