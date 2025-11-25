@@ -25,7 +25,7 @@
 
 **Tools & Commands:**
 
-i **Whois :**
+1.**Whois :**
 
 * The Whois protocol is a query and response protocol used widely for querying databases that store the registered users or assignees of an Internet resource, such as a domain name, an IP address block, or an autonomous system.
 
@@ -38,7 +38,7 @@ i **Whois :**
   
 ![Whois -image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/Screenshot%202025-11-25%20183147.png?raw=true)
 
-ii **NslookUp :**
+2.**NslookUp :**
 
  *
 
