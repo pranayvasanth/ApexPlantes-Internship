@@ -23,9 +23,9 @@
 
 * **Key Characteristic**: Low risk of detection, as it relies on publicly available information (Open-Source intelligence, or OSINT).
 
-* **Tools & Commands: **
+**Tools & Commands:**
 
-* **Whois :**
+i **Whois :**
 
 * The Whois protocol is a query and response protocol used widely for querying databases that store the registered users or assignees of an Internet resource, such as a domain name, an IP address block, or an autonomous system.
 
@@ -38,9 +38,10 @@
   
 ![Whois -image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/Screenshot%202025-11-25%20183147.png?raw=true)
 
- * **NslookUp :**
+ii **NslookUp :**
 
  *
+
  
 **2. Active Reconnaissance:**
 
