@@ -40,9 +40,26 @@
 
 2.**NslookUp :**
 
- *
+* Nslookup is used to illustrate:
+  1. Find the IP address of a host.
+  2. Find the domain name os a domain.
+  3. Find mail servers for a domain.
+  4. Find Name servers for a host.
 
- 
+### How to use Ns-lookup: 
+
+ * Nslookup is a network administration command-line tool available for many computer operating systems.
+* Nslookup is used for troubleshooting DNS-related problems.
+* Nslookup can be used in interactive and non-interactive mode.
+* To use in interactive mode, type nslookup at the command line and hit return.
+* You should get  an nslookup command prompt.
+
+### Use-Case :
+
+![nslookup image])(https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/nslookup.png?raw=true)
+
+* In this Use-case I used Nslookup to obtain IPv6 and IPv4 addresses of Goboult.
+* To obtain the MailTransfer servers used by the ApexPlanet website.  
 **2. Active Reconnaissance:**
 
 * Gather information by directly interacting with the target system or network. This involves sending probes or packets to the target.
