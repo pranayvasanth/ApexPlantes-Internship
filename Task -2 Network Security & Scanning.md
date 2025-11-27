@@ -56,7 +56,7 @@
 
 ### Use-Case :
 
-![nslookup image])(https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/nslookup.png?raw=true)
+![nslookup image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/nslookup.png?raw=true)
 
 * In this Use-case I used Nslookup to obtain IPv6 and IPv4 addresses of Goboult.
 * To obtain the MailTransfer servers used by the ApexPlanet website.  
