@@ -17,7 +17,7 @@
 ### Types of Reconnaissance :
 ---
   
-**1.Passive Reconnaissance:** 
+#### **1.Passive Reconnaissance:** 
   
 * Gathering information about a target without directly interacting with the target system or network. It's like observing from a distance.
 
@@ -46,7 +46,7 @@
   3. Find mail servers for a domain.
   4. Find Name servers for a host.
 
-### How to use Ns-lookup: 
+#### How to use Ns-lookup: 
 
  * Nslookup is a network administration command-line tool available for many computer operating systems.
 * Nslookup is used for troubleshooting DNS-related problems.
@@ -59,8 +59,10 @@
 ![nslookup image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/nslookup.png?raw=true)
 
 * In this Use-case I used Nslookup to obtain IPv6 and IPv4 addresses of Goboult.
-* To obtain the MailTransfer servers used by the ApexPlanet website.  
-**2. Active Reconnaissance:**
+* To obtain the MailTransfer servers used by the ApexPlanet website.
+
+
+### 2. Active Reconnaissance:**
 
 * Gather information by directly interacting with the target system or network. This involves sending probes or packets to the target.
 
