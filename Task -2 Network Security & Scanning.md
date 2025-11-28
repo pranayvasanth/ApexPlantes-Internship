@@ -62,6 +62,21 @@
 * To obtain the MailTransfer servers used by the ApexPlanet website.
 
 
+3.**Google Dorking:**
+
+Google dorking is often termed as "Google hacking."
+
+* This is a technique designed to utilise Google's Search services to research data and in file data  from different domains through the use of different search operators.
+
+#### Search Operators :
+
+* **Site :** This Operator signifies the specific site required.
+*  **In-url :** Check for the keyword in different URLs.
+*  **In-title :** To search for the specified Keyword in the title of the webpage.
+*   **In-text :** This is to search for a keyword in the body of the webpage.
+*   **FileType :** Defines the type of data to search for specific files.
+
+
 ### 2. Active Reconnaissance:**
 
 * Gather information by directly interacting with the target system or network. This involves sending probes or packets to the target.
