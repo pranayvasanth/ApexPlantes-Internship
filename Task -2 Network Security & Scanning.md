@@ -76,6 +76,11 @@ Google dorking is often termed as "Google hacking."
 *   **In-text :** This is to search for a keyword in the body of the webpage.
 *   **FileType :** Defines the type of data to search for specific files.
 
+### Use-Case :
+![image google-dorking](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/googledork.png?raw=true)
+
+![image dorking](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/googledorking.png?raw=true)
+
 
 ### 2. Active Reconnaissance:**
 
