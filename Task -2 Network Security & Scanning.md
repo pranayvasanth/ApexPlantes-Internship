@@ -82,8 +82,45 @@ Google dorking is often termed as "Google hacking."
 ![image dorking](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/googledorking.png?raw=true)
 
 
-### **2. Active Reconnaissance:**
+### **2. Active Reconnaissance :**
 
 * Gather information by directly interacting with the target system or network. This involves sending probes or packets to the target.
 
 * **Key Characteristic**:  Higher risk of detection (it leaves logs), but it often yields more detailed and real-time information. 
+
+* **Tools & Commands :**
+
+#### **1. Ping Sweep :** 
+
+A Ping Sweep is a method used to find out which IP addresses in a specific range are "alive" (active) and which are not. Instead of pinging one computer at a time, you scan an entire subnet (e.g., 192.168.1.1 to 192.168.1.254) simultaneously.
+
+* It works by sending ICMP Echo Request packets to multiple IP addresses. If a computer is active and configured to reply, it sends back an ICMP Echo Reply (the "Pong").
+
+  **Tool,Command,Explanation :**
+  
+* Telnet,telnet 192.168.1.10 21, : "Connects to IP 192.168.1.10 on port 21 (FTP). If open, the server might reply: 220 vsFTPd 3.0.3."
+
+* Netcat (nc),nc -v 192.168.1.10 80, : Connects to port 80 (Web). You might need to type HEAD / HTTP/1.0 and hit Enter twice to see the web server version.
+
+* Nmap,nmap -sV 192.168.1.10, : The -sV flag specifically instructs Nmap to probe open ports to determine service/version info.
+
+* Curl,curl -I 192.168.1.10, : "The -I flag fetches the HTTP Header only, which usually contains the Server: banner (e.g., nginx/1.18.0)."
+
+![Ping sweep image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/ping%20sweep.png?raw=true)
+
+#### **2. Banner grabbing :**
+
+Banner Grabbing is the process of connecting to a specific open port on a device to read the "Welcome Banner." This banner usually contains the software name and version number running on that port.
+
+* When you establish a connection (handshake) with a service (like an FTP, SSH, or Web server), the service often sends a text string to identify itself before you even log in.
+
+  **Tool,Command,Explanation :**
+  
+* Telnet,telnet 192.168.1.10 21, : "Connects to IP 192.168.1.10 on port 21 (FTP). If open, the server might reply: 220 vsFTPd 3.0.3."
+* Netcat (nc),nc -v 192.168.1.10 80, : Connects to port 80 (Web). You might need to type HEAD / HTTP/1.0 and hit Enter twice to see the web server version.
+*  Nmap,nmap -sV 192.168.1.10, : The -sV flag specifically instructs Nmap to probe open ports to determine service/version info.
+* Curl,curl -I 192.168.1.10, : "The -I flag fetches the HTTP Header only, which usually contains the Server: banner (e.g., nginx/1.18.0)."
+  ![Banner image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/banner.png?raw=true).
+
+## 2.Ports & Service Scanning :  
+
