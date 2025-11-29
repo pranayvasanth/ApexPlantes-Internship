@@ -82,7 +82,7 @@ Google dorking is often termed as "Google hacking."
 ![image dorking](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/googledorking.png?raw=true)
 
 
-### 2.** Active Reconnaissance:**
+### **2. Active Reconnaissance:**
 
 * Gather information by directly interacting with the target system or network. This involves sending probes or packets to the target.
 
