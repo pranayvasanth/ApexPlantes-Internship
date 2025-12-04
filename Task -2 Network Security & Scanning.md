@@ -124,3 +124,32 @@ Banner Grabbing is the process of connecting to a specific open port on a device
 
 ## 2.Ports & Service Scanning :  
 
+### Nmap :
+
+Nmap (Network Mapper) is a free, open-source utility used for network discovery and security auditing. It is the industry standard tool for network administrators and security professionals to map out networks, identifying what devices are running, what services they offer, and what operating systems they are using.
+
+#### **Functions of Nmap :**
+
+Nmap is versatile, but its primary functions generally fall into four categories:
+
+**1.Host Discovery (Ping Scanning):**
+
+* Determines which hosts (computers, servers, routers) on a network are actually "alive" or online.
+
+* It filters out IP addresses that are not currently in use so you don't waste time scanning empty space.
+
+**2.Port Scanning:**
+
+* This is Nmap's bread and butter. It probes specific "ports" on a target machine to see which ones are open.
+
+* Open Port: Indicates a service is listening (e.g., Port 80 for a web server).
+
+* Closed/Filtered Port: Indicates the port is rejecting connections or is hidden behind a firewall.
+
+**3.Service Version Detection:**
+
+* Once Nmap finds an open port, it can query it further to find out exactly what application is running and what version it is (e.g., "Apache Web Server 2.4.41"). This is crucial for finding vulnerabilities associated with specific software versions.
+
+**Operating System (OS) Detection:**
+
+* Nmap analyzes the subtle characteristics of the data packets returned by the target (a process called "TCP/IP stack fingerprinting") to guess the operating system (e.g., Linux, Windows 10, macOS).
