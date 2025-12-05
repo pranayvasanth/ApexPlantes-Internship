@@ -155,6 +155,11 @@ Nmap is versatile, but its primary functions generally fall into four categories
 * Nmap analyzes the subtle characteristics of the data packets returned by the target (a process called "TCP/IP stack fingerprinting") to guess the operating system (e.g., Linux, Windows 10, macOS).
 
 
+### 4.Wireshark Captures:
+
+  * Here is the **DNS** packet caught in the Wireshark, while performing a DNS catch.
+    ![wireshark image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/Screenshot%202025-12-05%20174031.png?raw=true)
+
 ### 5. FireWall Basics :
 
  A firewall acts as a gatekeeper between your computer and the network. It analyzes "packets" of data and decides whether to let them through or throw them away based on rules you define.
