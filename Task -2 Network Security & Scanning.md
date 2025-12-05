@@ -159,6 +159,9 @@ Nmap is versatile, but its primary functions generally fall into four categories
 
  A firewall acts as a gatekeeper between your computer and the network. It analyzes "packets" of data and decides whether to let them through or throw them away based on rules you define.
 
+![Firewall image](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/firewall%20image.jpeg?raw=true)
+
+
 **Iptable Rule:** 
 
 *  INPUT: Traffic coming into your server (e.g., someone visiting your website).
