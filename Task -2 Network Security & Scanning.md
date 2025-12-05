@@ -150,6 +150,89 @@ Nmap is versatile, but its primary functions generally fall into four categories
 
 * Once Nmap finds an open port, it can query it further to find out exactly what application is running and what version it is (e.g., "Apache Web Server 2.4.41"). This is crucial for finding vulnerabilities associated with specific software versions.
 
-**Operating System (OS) Detection:**
+**4.Operating System (OS) Detection:**
 
 * Nmap analyzes the subtle characteristics of the data packets returned by the target (a process called "TCP/IP stack fingerprinting") to guess the operating system (e.g., Linux, Windows 10, macOS).
+
+
+### 5. FireWall Basics :
+
+ A firewall acts as a gatekeeper between your computer and the network. It analyzes "packets" of data and decides whether to let them through or throw them away based on rules you define.
+
+** Iptable Rule:** 
+
+*  INPUT: Traffic coming into your server (e.g., someone visiting your website).
+
+* OUTPUT: Traffic leaving from your server (e.g., your server downloading an update).
+
+* FORWARD: Traffic passing through your server (e.g., if your server acts as a router).
+
+* The Golden Rule: iptables processes rules from top to bottom. Once a packet matches a rule, it takes the action (ACCEPT or DROP) and stops looking. Order matters.
+
+**Basic Allow/Deny Rules:**
+
+Below is the syntax to create rules. Note that you generally need sudo privileges.
+
+**1. The Safety Net: Allow SSH first :**
+
+***Crucial Warning:*** Before blocking anything, always ensure you allow your own connection (SSH), or you will lock yourself out of the server.
+
+ -A INPUT: Append to the INPUT chain
+ -p tcp: Protocol is TCP
+ --dport 22: Destination port 22 (Standard SSH)
+ -j ACCEPT: Jump to Accept (Allow the traffic)
+
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+
+
+**2. Allow Specific Ports (e.g., Web Server):**
+If you are hosting a website, you need to open HTTP (80) and HTTPS (443).
+
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+
+**3. Deny/Block Specific Ports:**
+To explicitly block a protocol, like Telnet (port 23), which is insecure:
+
+ -j DROP: Silently delete the packet (sender gets no response)
+ -j REJECT: Block it but send a "Connection Refused" error back
+
+sudo iptables -A INPUT -p tcp --dport 23 -j DROP
+
+**4. Block a Specific IP Address:**
+If you notice malicious activity from a specific IP (e.g., 192.168.1.100), you can block them entirely:
+
+-s: Source IP address
+
+sudo iptables -A INPUT -s 192.168.1.100 -j DROP
+
+#### Mitigating a Port Scan:
+
+* A "Port Scan" (often done using tools like Nmap) is when an attacker rapidly knocks on every door (port) of your server to see which ones are open.
+
+* While iptables isn't an intelligent Intrusion Detection System (IDS), we can use the recent module to create a trap. This logic detects if a single IP attempts to make too many new connections within a short timeframe (a characteristic of a port scan).
+
+**The "Trap" Logic:**
+
+* We will create a rule that says: "If an IP makes more than 10 connection attempts in 60 seconds, block them."
+
+***Step 1:*** 
+Check for existing bans First, insert a rule at the top to check if the IP is already on the "bad list."
+
+sudo iptables -A INPUT -m recent --name portscan --rcheck --seconds 60 --hitcount 10 -j DROP
+
+***Step 2:***
+Add suspicious activity to the list If they aren't banned yet, add the connection attempt to the tracking list.
+
+sudo iptables -A INPUT -m recent --name portscan --set -j ACCEPT
+
+#### How this works:
+
+* Packet Arrives: The first rule checks the list named portscan.
+
+* Count Check: Has this IP hit us 10 times (--hitcount 10) in the last 60 seconds (--seconds 60)?
+
+* Action: If Yes, DROP. If No, move to the next rule.
+
+* Tracking: The second rule adds the current packet's timestamp to the portscan list and then ACCEPTS it (or passes it to your other rules).
+
