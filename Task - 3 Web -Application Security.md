@@ -43,6 +43,6 @@ This interference is usually achieved by injecting malicious SQL code into field
 
 ***Example (Conceptual) :***
 
-* Vulnerable: SELECT * FROM users WHERE username = ' + user_input + '
+ Vulnerable: SELECT * FROM users WHERE username = ' + user_input + '
 
 * Secure (Prepared Statement): SELECT * FROM users WHERE username = ? (The input is bound to ? as a value, not code.)
