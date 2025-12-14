@@ -19,10 +19,11 @@ This interference is usually achieved by injecting malicious SQL code into field
 * Modify or delete existing data.
 * Gain administrative control over the database server.
 
-* **Use-Case :**
+ **Use-Case :**
 
 * ***Retrieving Users data :***
- * Query Used : **1' OR '1' = '1 UNION SELECT users,passwords FROM user#**  
+
+   Query Used : **1' OR '1' = '1 UNION SELECT user,passwords FROM users#**  
 
 ![SQli Image-data](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/SQLI%20users-data.png?raw=true)
 
