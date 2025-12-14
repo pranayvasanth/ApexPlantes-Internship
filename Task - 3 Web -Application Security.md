@@ -37,7 +37,8 @@ This interference is usually achieved by injecting malicious SQL code into field
 * Preventing SQL Injection requires implementing secure coding practices. Here are the most effective and widely recommended methods:
 
 * **Using  Prepared Statements (with Parameterized Queries)**
-* This is the most effective defense mechanism. Instead of building a query string by concatenating user input, you use a prepared statement. The query structure is sent to the database first, and then the user input is sent as a parameter.
+  
+ This is the most effective defense mechanism. Instead of building a query string by concatenating user input, you use a prepared statement. The query structure is sent to the database first, and then the user input is sent as a parameter.
 
 * ***How it works :*** The database engine treats the user input as a literal string value, never as executable SQL code, regardless of what characters it contains (like ' or --).
 
