@@ -169,14 +169,8 @@ Verification: When the user submits the form, the browser sends the token back t
 Example Secure Form:
 
 #### HTML
-
-<form action="/change-password" method="POST">
+    <form action="/change-password" method="POST">
     <input type="password" name="new_password">
     <input type="hidden" name="user_token" value="8f3a92b1c4e5d6f7a8b9c0d1e2f3a4b5">
     <input type="submit" value="Change">
-</form>
-
-
-
-*
-? (The input is bound to ? as a value, not code.)
+    </form>
