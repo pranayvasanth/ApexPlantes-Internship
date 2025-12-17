@@ -229,4 +229,64 @@ Sensitive Data Leaks: Reading files like config.php, .env, or /root/.ssh/id_rsa.
 
 * Malware Distribution: The server can be used to host malware or attack other websites
 
+## BURP SUITE
 
+* Burp Suite is the industry-standard toolkit for web application security testing. While the "Community Edition" provides basic manual tools, Burp Suite Professional (the advanced version) adds powerful automation, including a vulnerability scanner and unrestricted performance for automated attacks.
+
+### 1. Intercepting and Modifying Login Requests
+
+* The Proxy tool is the heart of Burp Suite. It acts as a "Man-in-the-Middle," sitting between your browser and the web server to let you pause, inspect, and change data before it is sent.
+
+**How to Intercept a Login***
+
+* Set Up: Use Burp’s Built-in Browser (Proxy > Intercept > Open Browser) so you don't have to configure proxy settings manually.
+
+* Enable Intercept: In the Proxy > Intercept tab, ensure the button says "Intercept is on."
+
+* Perform the Login: Type a username and password into the website's login form and click "Submit."
+
+*The Pause: The browser will hang. In Burp Suite, you will see the raw HTTP POST request.
+
+***How to Modify the Request*** 
+
+* Once intercepted, you can click directly into the raw text of the request to change values:
+
+* Parameter Manipulation: Change a username like user123 to admin.
+
+* Logic Testing: Change a field like isAdmin=false to isAdmin=true.
+
+Bypassing Client-Side Limits: If the browser limits a password to 12 characters, you can bypass that by typing a 100-character password directly into the intercepted Burp request.
+
+Forward: Click the Forward button to send your modified request to the server.
+
+### 2. Fuzzing with the Intruder Tool
+
+* Fuzzing is the process of sending massive amounts of random or semi-structured data to an input field to see if the application crashes, throws an error, or reveals a vulnerability (like SQL Injection or XSS).
+
+* Intruder is designed for this high-volume automation.
+
+***Steps to Perform Fuzzing:***
+
+**Send to Intruder:** Find your login request in the Proxy > HTTP history tab, right-click it, and select "Send to Intruder."
+
+**Define Positions:** In the Intruder > Positions tab, highlight the value you want to fuzz (e.g., the password or a search term) and click "Add §." This tells Burp exactly where to "inject" the payloads.
+
+***Select Attack Type:*** 
+
+* Sniper: Best for fuzzing one field at a time with one list of data.
+
+* Cluster Bomb: Best for brute-forcing (testing every combination of a username list and a password list).
+
+* Set Payloads: In the Payloads tab, load a "fuzz list" (e.g., a list of common SQL injection strings like ' OR 1=1 --).
+
+* Start Attack: Burp will rapidly fire off hundreds of requests.
+
+***Analyzing Results***
+
+After the attack, you look for anomalies in the results table:
+
+Status Code: Did a request return a 500 Internal Server Error? (Potential crash/vulnerability).
+
+Length: Is one response significantly larger or smaller than the others? This often indicates a successful bypass or a different error message.
+
+Time: Did one request take much longer? This could indicate a "Blind SQL Injection" where the server is struggling to process a complex command.
